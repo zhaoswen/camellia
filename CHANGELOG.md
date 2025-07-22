@@ -6,3 +6,8 @@
 
 * Optimize the package size 
 * Re-standardize the package names.
+
+## 1.0.2
+
+* Optimize the package size
+* Remove unused dependencies
