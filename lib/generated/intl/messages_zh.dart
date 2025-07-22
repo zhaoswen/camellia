@@ -21,7 +21,6 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'zh';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "about_us": MessageLookupByLibrary.simpleMessage("关于星群"),
     "action": MessageLookupByLibrary.simpleMessage("动作"),

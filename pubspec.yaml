@@ -81,10 +81,33 @@ dependencies:
   url_launcher: ^6.3.1
   # uuid 生产
   uuid: ^4.5.1
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  flutter_lints: ^5.0.0
 
 flutter:
+  uses-material-design: true
+  assets:
+    # logo 图标
+    - assets/images/icon.png
+    - assets/images/icon_dark.png
+  fonts:
+    # 普惠体
+    - family: puhui
+      fonts:
+        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Bold.ttf
+        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Heavy.ttf
+        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Light.ttf
+        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Medium.ttf
+        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Regular.ttf
+    # 钉钉体
+    - family: dingtalk
+      fonts:
+        - asset: assets/fonts/DingTalk-JinBuTi.ttf
+    # 谷歌 GUGI 字体
+    - family: gugi
+      fonts:
+        - asset: assets/fonts/Gugi-Regular.ttf
+flutter_intl:
+  enabled: true
