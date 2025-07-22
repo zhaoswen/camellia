@@ -38,9 +38,6 @@ dependencies:
   flutter_advanced_switch: ^3.1.0
   # 表单框架
   flutter_form_builder: ^10.0.1
-  # 国际化
-  flutter_localizations:
-    sdk: flutter
   # Markdown 支持
   flutter_markdown: ^0.7.6+2
   # rust 桥
@@ -109,5 +106,3 @@ flutter:
     - family: gugi
       fonts:
         - asset: assets/fonts/Gugi-Regular.ttf
-flutter_intl:
-  enabled: true

@@ -1,8 +1,6 @@
 import 'package:camellia/shared/shared.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
-
-import '../../../generated/l10n.dart';
 import '../display/x_message.dart';
 
 class XOperateButton extends StatefulWidget {
@@ -67,8 +65,8 @@ class _XOperateButtonState extends State<XOperateButton> {
                         //     S.current.warn, S.current.hint_danger_operator_warn,
                         //     type: XSnackbarType.warning, duration: 2);
                         MessageOverlay.showMessage(
-                          S.current.hint_danger_operator_warn,
-                          title: S.current.warn,
+                          "危险操作",
+                          title: "警告",
                           type: MessageType.warning,
                           context: context,
                         );

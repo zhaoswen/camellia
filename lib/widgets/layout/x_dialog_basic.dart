@@ -3,8 +3,6 @@ import 'package:camellia/widgets/display/x_empty.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../generated/l10n.dart';
-
 // 弹出对话框
 void showXDialogBasic({
   required BuildContext context,
@@ -24,10 +22,10 @@ void showXDialogBasic({
   required Function() onCancel,
 }) {
   if (confirm == "") {
-    confirm = S.current.confirm;
+    confirm = "确认";
   }
   if (cancel == "") {
-    cancel = S.current.cancel;
+    cancel = "取消";
   }
   showDialog(
     context: context,

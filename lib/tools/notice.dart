@@ -1,7 +1,6 @@
 // 检查保存状态
 import 'package:flutter/material.dart';
 
-import '../generated/l10n.dart';
 import '../shared/shared.dart';
 import '../widgets/layout/x_dialog_alert.dart';
 
@@ -15,8 +14,8 @@ void checkSaveStatus(
     // 弹出提示框
     showXDialogAlert(
       context: context,
-      title: S.current.warn,
-      content: S.current.hint_no_save_sure_exit,
+      title: "警告",
+      content: "有未保存的修改，是否保存？",
       onConfirm: () {
         if (onConfirm != null) {
           onConfirm.call();
