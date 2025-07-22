@@ -1,7 +1,8 @@
 name: camellia
 description: "Camellia for flutter"
 version: 1.0.0
-homepage: https://github.com/zhaoswen
+homepage: https://github.com/zhaoswen/camellia
+
 
 environment:
   sdk: ^3.8.1
@@ -10,6 +11,76 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # 动画
+  animations: ^2.0.11
+
+  # 桌面管理器
+  bitsdojo_window: ^0.1.6
+
+  # 下拉框
+  choice: ^2.3.2
+
+  # 网络请求
+  dio: ^5.8.0+1
+  # 下拉框
+  dropdown_flutter: ^1.0.1
+  # 可拖拽列表
+  drag_and_drop_lists: ^0.4.0
+
+  # 消息总线
+  event_bus: ^2.0.1
+  # 图标
+  eva_icons_flutter: ^3.1.0
+
+  # 图表
+  fl_chart: ^0.70.2
+  # 开关按钮
+  flutter_advanced_switch: ^3.1.0
+  # 表单框架
+  flutter_form_builder: ^10.0.1
+  # 国际化
+  flutter_localizations:
+    sdk: flutter
+  # Markdown 支持
+  flutter_markdown: ^0.7.6+2
+  # rust 桥
+  flutter_rust_bridge: ^2.9.0
+  # 容器自定义大小
+  flutter_resizable_container: ^3.0.4
+  # 表单校验框架
+  form_builder_validators: ^11.1.2
+  # 图标
+  font_awesome_flutter: ^10.8.0
+
+  # getx框架
+  get: ^4.7.2
+
+  # 图标
+  hugeicons: ^0.0.10
+
+  # 针对于Json5的支持
+  json5: ^0.8.2
+  # Json 路径访问
+  json_path: ^0.7.5
+
+  # 日志
+  logger: ^2.5.0
+
+  # 文本比对
+  pretty_diff_text: ^2.0.0
+  # Path
+  path_provider: ^2.1.5
+
+  # 持久化
+  shared_preferences: ^2.5.2
+
+  # 用于解析 toml
+  toml: ^0.16.0
+
+  # 打开网页
+  url_launcher: ^6.3.1
+  # uuid 生产
+  uuid: ^4.5.1
 
 dev_dependencies:
   flutter_test:

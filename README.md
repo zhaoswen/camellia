@@ -1,25 +1,5 @@
 # Camellia Widget Library
 
-## Features
+简单易用的 Flutter 组件库
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+目前此组件集较重，需要依赖的内容过多，且处于初步阶段，仅建议测试使用
