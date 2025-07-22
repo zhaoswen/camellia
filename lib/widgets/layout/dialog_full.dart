@@ -1,5 +1,4 @@
 import 'package:camellia/shared/shared.dart';
-import 'package:camellia/widgets/layout/title_bar.dart';
 import 'package:flutter/material.dart';
 
 // 全屏对话框（独占）
@@ -27,7 +26,7 @@ Future<void> showXDialogFull(
                 child: Column(
                   children: [
                     // 标题栏
-                    TitleBar(),
+                    // TitleBar(),
                     Container(
                       padding: EdgeInsets.fromLTRB(25, 10, 20, 10),
                       decoration: BoxDecoration(
