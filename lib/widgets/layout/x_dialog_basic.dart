@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import '../../../generated/l10n.dart';
 
 // 弹出对话框
-showXDialogBasic({
+void showXDialogBasic({
   required BuildContext context,
   required String title,
   double width = 500,

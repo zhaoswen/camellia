@@ -109,7 +109,7 @@ class _XMapEditorState extends State<XMapEditor> {
     RxMap<String, dynamic> map = RxMap();
     var keyFocusNodes = [];
     var keyName = "";
-    var oldKeyName = "";
+    // var oldKeyName = "";
     if (widget.getInitData != null) {
       var data = widget.getInitData!();
       for (var element in data!.keys) {
@@ -139,7 +139,7 @@ class _XMapEditorState extends State<XMapEditor> {
                     var keyFocusNode = FocusNode();
                     keyFocusNode.addListener(() {
                       if (keyFocusNode.hasFocus) {
-                        oldKeyName = key;
+                        // oldKeyName = key;
                       } else {
                         if (keyName == "") {
                           MessageOverlay.showMessage(

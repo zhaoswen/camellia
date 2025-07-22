@@ -3,7 +3,7 @@ import 'package:camellia/widgets/layout/x_bar_title.dart';
 import 'package:flutter/material.dart';
 
 // 全屏对话框（独占）
-showXDialogFull(
+Future<void> showXDialogFull(
   BuildContext context,
   // 对话框标题
   String title,

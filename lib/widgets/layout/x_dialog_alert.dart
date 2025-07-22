@@ -2,7 +2,7 @@ import 'package:camellia/shared/shared.dart';
 import 'package:flutter/material.dart';
 
 // 弹出对话框
-showXDialogAlert({
+void showXDialogAlert({
   required BuildContext context,
   required String title,
   double width = 500,
