@@ -28,12 +28,9 @@ dependencies:
   flutter_advanced_switch: ^3.1.0
   # 表单框架
   flutter_form_builder: ^10.1.0
-  # 容器自定义大小
-  flutter_resizable_container: ^4.2.0
+
   # 表单校验框架
   form_builder_validators: ^11.2.0
-  # 图标
-  font_awesome_flutter: ^10.8.0
 
   # getx框架
   get: ^4.7.2
@@ -43,9 +40,6 @@ dependencies:
 
   # 日志
   logger: ^2.6.1
-
-  # Path
-  path_provider: ^2.1.5
 
   # 打开网页
   url_launcher: ^6.3.2
