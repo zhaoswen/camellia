@@ -1,6 +1,6 @@
 name: camellia
 description: "Camellia for flutter"
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/zhaoswen/camellia
 
 
@@ -85,20 +85,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-#  fonts:
-#    # 普惠体
-#    - family: puhui
-#      fonts:
-#        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Bold.ttf
-#        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Heavy.ttf
-#        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Light.ttf
-#        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Medium.ttf
-#        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Regular.ttf
-#    # 钉钉体
-#    - family: dingtalk
-#      fonts:
-#        - asset: assets/fonts/DingTalk-JinBuTi.ttf
-#    # 谷歌 GUGI 字体
-#    - family: gugi
-#      fonts:
-#        - asset: assets/fonts/Gugi-Regular.ttf
