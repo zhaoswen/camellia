@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../../../shared/shared.dart';
-import '../layout/x_dialog_basic.dart';
+import '../layout/dialog_basic.dart';
 import '../operator/x_button_icon.dart';
 import 'c_input.dart';
 

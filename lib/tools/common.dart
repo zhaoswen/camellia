@@ -1,5 +1,4 @@
 // 切换语言
-import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -29,10 +28,4 @@ BuildContext? getContext() {
   } else {
     return null;
   }
-}
-
-// 退出应用程序
-exitApp() async {
-  // 关闭主窗口
-  appWindow.close();
 }

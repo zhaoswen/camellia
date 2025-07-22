@@ -154,12 +154,9 @@ class ThemeFont {
   // 全局字体类型
   final String family;
 
-  // final String font1 = "dingtalk";
-  // final String font2 = "puhui";
 
   const ThemeFont({
-    // 默认字体为dingtalk
-    this.family = "puhui",
+    this.family = "",
   });
 }
 

@@ -53,29 +53,29 @@ dependencies:
   get: ^4.7.2
 
   # 图标
-  hugeicons: ^0.0.10
+  hugeicons: ^0.0.11
 
   # 针对于Json5的支持
   json5: ^0.8.2
   # Json 路径访问
-  json_path: ^0.7.5
+  json_path: ^0.7.6
 
   # 日志
-  logger: ^2.5.0
+  logger: ^2.6.1
 
   # 文本比对
-  pretty_diff_text: ^2.0.0
+  pretty_diff_text: ^2.1.0
   # Path
   path_provider: ^2.1.5
 
   # 持久化
-  shared_preferences: ^2.5.2
+  shared_preferences: ^2.5.3
 
   # 用于解析 toml
   toml: ^0.16.0
 
   # 打开网页
-  url_launcher: ^6.3.1
+  url_launcher: ^6.3.2
   # uuid 生产
   uuid: ^4.5.1
 dev_dependencies:
@@ -85,24 +85,20 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets:
-    # logo 图标
-    - assets/images/icon.png
-    - assets/images/icon_dark.png
-  fonts:
-    # 普惠体
-    - family: puhui
-      fonts:
-        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Bold.ttf
-        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Heavy.ttf
-        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Light.ttf
-        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Medium.ttf
-        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Regular.ttf
-    # 钉钉体
-    - family: dingtalk
-      fonts:
-        - asset: assets/fonts/DingTalk-JinBuTi.ttf
-    # 谷歌 GUGI 字体
-    - family: gugi
-      fonts:
-        - asset: assets/fonts/Gugi-Regular.ttf
+#  fonts:
+#    # 普惠体
+#    - family: puhui
+#      fonts:
+#        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Bold.ttf
+#        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Heavy.ttf
+#        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Light.ttf
+#        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Medium.ttf
+#        - asset: assets/fonts/puhui/Alibaba-PuHuiTi-Regular.ttf
+#    # 钉钉体
+#    - family: dingtalk
+#      fonts:
+#        - asset: assets/fonts/DingTalk-JinBuTi.ttf
+#    # 谷歌 GUGI 字体
+#    - family: gugi
+#      fonts:
+#        - asset: assets/fonts/Gugi-Regular.ttf

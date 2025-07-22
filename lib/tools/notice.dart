@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 import '../shared/shared.dart';
-import '../widgets/layout/x_dialog_alert.dart';
+import '../widgets/layout/dialog_alert.dart';
 
 void checkSaveStatus(
   BuildContext context, {
