@@ -3,16 +3,16 @@ import 'package:drag_and_drop_lists/drag_and_drop_lists.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-class CList extends StatefulWidget {
-  const CList({super.key, required this.items});
+class DataList extends StatefulWidget {
+  const DataList({super.key, required this.items});
 
   final List<CListItem> items;
 
   @override
-  State<CList> createState() => _CListState();
+  State<DataList> createState() => _DataListState();
 }
 
-class _CListState extends State<CList> {
+class _DataListState extends State<DataList> {
   late List<DragAndDropList> _contents;
 
   @override

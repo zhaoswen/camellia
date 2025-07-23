@@ -5,16 +5,16 @@ import 'package:hugeicons/hugeicons.dart';
 import '../../../shared/shared.dart';
 import '../../../tools/logger.dart';
 
-class CConsole extends StatefulWidget {
-  const CConsole({super.key, required this.loggerObs});
+class LogConsole extends StatefulWidget {
+  const LogConsole({super.key, required this.loggerObs});
 
   final RxList<dynamic> loggerObs;
 
   @override
-  State<CConsole> createState() => _CConsoleState();
+  State<LogConsole> createState() => _LogConsoleState();
 }
 
-class _CConsoleState extends State<CConsole> {
+class _LogConsoleState extends State<LogConsole> {
   final ScrollController _scrollController = ScrollController();
 
   @override

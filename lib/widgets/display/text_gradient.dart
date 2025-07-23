@@ -1,13 +1,35 @@
 import 'package:flutter/material.dart';
 
-class CWelcome extends StatefulWidget {
-  const CWelcome({super.key});
+class TextGradient extends StatefulWidget {
+  const TextGradient({super.key,
+    // 文本
+    this.text = "Camellia UI",
+    // 文本样式
+    this.textStyle = const TextStyle(
+      // 字体大小默认35
+      fontSize: 35,
+      color: Colors.white,
+      fontWeight: FontWeight.normal,
+    ),
+    this.commonColors = const [
+      Color.fromARGB(255, 0, 128, 255),
+      Color.fromARGB(255, 0, 64, 148)
+    ],
+    this.hoverColors = const [
+      Color.fromARGB(255, 43, 0, 171),
+      Color.fromARGB(255, 103, 38, 255)
+    ]});
+
+  final String text;
+  final TextStyle textStyle;
+  final List<Color> commonColors;
+  final List<Color> hoverColors;
 
   @override
-  State<CWelcome> createState() => _CWelcomeState();
+  State<TextGradient> createState() => _TextGradientState();
 }
 
-class _CWelcomeState extends State<CWelcome>
+class _TextGradientState extends State<TextGradient>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
@@ -34,14 +56,6 @@ class _CWelcomeState extends State<CWelcome>
 
   @override
   Widget build(BuildContext context) {
-    var commonColors = [
-      const Color.fromARGB(255, 0, 128, 255),
-      const Color.fromARGB(255, 0, 64, 148),
-    ];
-    var hoverColors = [
-      const Color.fromARGB(255, 43, 0, 171),
-      const Color.fromARGB(255, 103, 38, 255),
-    ];
 
     return Container(
       alignment: Alignment.center,
@@ -64,13 +78,13 @@ class _CWelcomeState extends State<CWelcome>
                 return LinearGradient(
                   colors: [
                     Color.lerp(
-                      commonColors[0],
-                      hoverColors[0],
+                      widget.commonColors[0],
+                      widget.hoverColors[0],
                       _animation.value,
                     )!,
                     Color.lerp(
-                      commonColors[1],
-                      hoverColors[1],
+                      widget.commonColors[1],
+                      widget.hoverColors[1],
                       _animation.value,
                     )!,
                   ],
@@ -79,13 +93,8 @@ class _CWelcomeState extends State<CWelcome>
                 ).createShader(bounds);
               },
               child: Text(
-                "Stardust Hub",
-                style: TextStyle(
-                  fontSize: 35,
-                  fontFamily: "dingtalk",
-                  color: Colors.white,
-                  fontWeight: FontWeight.normal,
-                ),
+                widget.text,
+                style: widget.textStyle,
               ),
             );
           },

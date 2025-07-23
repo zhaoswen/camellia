@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 // 建议移动端使用
-showSnackbar(
+void showSnackbar(
   String title,
   String content, {
   XSnackbarType type = XSnackbarType.info,

@@ -1,6 +1,6 @@
 name: camellia
 description: "Camellia for flutter"
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/zhaoswen/camellia
 
 
@@ -11,16 +11,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  # 动画
-  animations: ^2.0.11
 
   # 下拉框
   dropdown_flutter: ^1.0.1
   # 可拖拽列表
   drag_and_drop_lists: ^0.4.2
-
-  # 图标（后续会自绘）
-  eva_icons_flutter: ^3.1.0
 
   # 图表
   fl_chart: ^1.0.0
@@ -28,7 +23,6 @@ dependencies:
   flutter_advanced_switch: ^3.1.0
   # 表单框架
   flutter_form_builder: ^10.1.0
-
   # 表单校验框架
   form_builder_validators: ^11.2.0
 
