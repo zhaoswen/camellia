@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class TextGradient extends StatefulWidget {
-  const TextGradient({super.key,
+  const TextGradient({
+    super.key,
     // 文本
     this.text = "Camellia UI",
     // 文本样式
@@ -13,12 +14,13 @@ class TextGradient extends StatefulWidget {
     ),
     this.commonColors = const [
       Color.fromARGB(255, 0, 128, 255),
-      Color.fromARGB(255, 0, 64, 148)
+      Color.fromARGB(255, 0, 64, 148),
     ],
     this.hoverColors = const [
       Color.fromARGB(255, 43, 0, 171),
-      Color.fromARGB(255, 103, 38, 255)
-    ]});
+      Color.fromARGB(255, 103, 38, 255),
+    ],
+  });
 
   final String text;
   final TextStyle textStyle;
@@ -56,7 +58,6 @@ class _TextGradientState extends State<TextGradient>
 
   @override
   Widget build(BuildContext context) {
-
     return Container(
       alignment: Alignment.center,
       child: MouseRegion(
@@ -92,10 +93,7 @@ class _TextGradientState extends State<TextGradient>
                   end: Alignment.bottomRight,
                 ).createShader(bounds);
               },
-              child: Text(
-                widget.text,
-                style: widget.textStyle,
-              ),
+              child: Text(widget.text, style: widget.textStyle),
             );
           },
         ),

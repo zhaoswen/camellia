@@ -151,7 +151,10 @@ class _FormTextSelectState extends State<FormTextSelect> {
                       },
                       content: SizedBox(
                         height: 400,
-                        child: ViewTab(tabs: makeTab(widget.options), spacing: 10),
+                        child: ViewTab(
+                          tabs: makeTab(widget.options),
+                          spacing: 10,
+                        ),
                       ),
                     ),
                   },

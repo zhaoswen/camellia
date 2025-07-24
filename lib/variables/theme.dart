@@ -153,10 +153,7 @@ class ThemeFont {
   // 全局字体类型
   final String family;
 
-
-  const ThemeFont({
-    this.family = "",
-  });
+  const ThemeFont({this.family = ""});
 }
 
 class ThemeIcon {

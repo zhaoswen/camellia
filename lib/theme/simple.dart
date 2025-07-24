@@ -31,10 +31,9 @@ final ThemeData simpleTheme = ThemeData(
   ),
   inputDecorationTheme: InputDecorationTheme(
     labelStyle: TextStyle(
-        fontSize: 14,
-        fontWeight: FontWeight.w400,
-        color: Color.fromARGB(255, 18, 115, 250
-        )
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      color: Color.fromARGB(255, 18, 115, 250),
     ),
 
     border: UnderlineInputBorder(
@@ -52,7 +51,6 @@ final ThemeData simpleTheme = ThemeData(
         color: Color.fromARGB(255, 18, 115, 250),
       ),
     ),
-
   ),
   iconButtonTheme: IconButtonThemeData(
     style: IconButton.styleFrom(
