@@ -26,3 +26,10 @@
 * Re-standardize component names
 * Remove unused data and optimize package size
 * Organize package structure
+
+## 1.0.5
+
+* Standardize component usage and naming
+* Remove extra dependencies
+* Standardize theme usage
+* Preliminary build of dark mode

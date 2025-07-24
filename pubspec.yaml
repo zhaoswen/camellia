@@ -1,6 +1,6 @@
 name: camellia
 description: "This is a simple and easy-to-use Flutter component library that can be seamlessly integrated into applications, whether they are mobile or desktop-based."
-version: 1.0.4
+version: 1.0.5
 homepage: https://github.com/zhaoswen/camellia
 
 environment:
