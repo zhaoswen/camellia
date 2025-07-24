@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 // 面包屑组件
-class XBreadcrumb extends StatefulWidget {
-  const XBreadcrumb({
+class Breadcrumb extends StatefulWidget {
+  const Breadcrumb({
     super.key,
     this.height = 40,
     required this.items,
@@ -30,10 +30,10 @@ class XBreadcrumb extends StatefulWidget {
   final Widget head;
 
   @override
-  State<XBreadcrumb> createState() => _XBreadcrumbState();
+  State<Breadcrumb> createState() => _BreadcrumbState();
 }
 
-class _XBreadcrumbState extends State<XBreadcrumb> {
+class _BreadcrumbState extends State<Breadcrumb> {
   @override
   Widget build(BuildContext context) {
     List<Widget> mainRow = [];
