@@ -1,10 +1,10 @@
-import 'package:camellia/widgets/display/x_empty.dart';
+import 'package:camellia/widgets/display/empty.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 
-class Xform extends StatefulWidget {
-  const Xform({
+class FormBody extends StatefulWidget {
+  const FormBody({
     super.key,
     required this.formKey,
     required this.onChange,
@@ -24,14 +24,14 @@ class Xform extends StatefulWidget {
   final List<Widget> children;
 
   @override
-  State<Xform> createState() => _XformState();
+  State<FormBody> createState() => _FormBodyState();
 }
 
-class _XformState extends State<Xform> {
+class _FormBodyState extends State<FormBody> {
   @override
   Widget build(BuildContext context) {
     return widget.children.isEmpty
-        ? XEmpty(text: widget.emptyText)
+        ? Empty(text: widget.emptyText)
         : FormBuilder(
             onChanged: widget.onChange,
             key: widget.formKey,

@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 
 // 表格组件
-class Xtable extends StatefulWidget {
-  const Xtable({super.key});
+class Table extends StatefulWidget {
+  const Table({super.key});
 
   @override
-  State<Xtable> createState() => _XtableState();
+  State<Table> createState() => _TableState();
 }
 
-class _XtableState extends State<Xtable> {
+class _TableState extends State<Table> {
   @override
   Widget build(BuildContext context) {
     return const Placeholder();

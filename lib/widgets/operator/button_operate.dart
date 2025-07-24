@@ -1,9 +1,9 @@
 import 'package:camellia/shared/shared.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
-import '../display/x_message.dart';
+import '../display/message.dart';
 
-class XOperateButton extends StatefulWidget {
+class ButtonOperate extends StatefulWidget {
   final IconData iconData;
   final VoidCallback? onPressed;
   final String? tooltip;
@@ -19,7 +19,7 @@ class XOperateButton extends StatefulWidget {
   // 如果为true，第一次点击不会执行操作，第二次点击才会触发
   final bool isDanger;
 
-  const XOperateButton({
+  const ButtonOperate({
     super.key,
     required this.iconData,
     this.onPressed,
@@ -36,10 +36,10 @@ class XOperateButton extends StatefulWidget {
   });
 
   @override
-  State<XOperateButton> createState() => _XOperateButtonState();
+  State<ButtonOperate> createState() => _ButtonOperateState();
 }
 
-class _XOperateButtonState extends State<XOperateButton> {
+class _ButtonOperateState extends State<ButtonOperate> {
   bool isDangerState = false;
 
   @override

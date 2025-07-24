@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../shared/shared.dart';
 
-class Xtitle extends StatelessWidget {
-  const Xtitle({
+class TextTitle extends StatelessWidget {
+  const TextTitle({
     super.key,
     required this.title,
     this.fontSize = 14,

@@ -1,8 +1,8 @@
 import 'package:camellia/shared/shared.dart';
 import 'package:flutter/material.dart';
 
-class Xtextbutton extends StatefulWidget {
-  const Xtextbutton({
+class ButtonText extends StatefulWidget {
+  const ButtonText({
     super.key,
     required this.onPressed,
     required this.text,
@@ -22,10 +22,10 @@ class Xtextbutton extends StatefulWidget {
   final double width;
 
   @override
-  State<Xtextbutton> createState() => _XtextbuttonState();
+  State<ButtonText> createState() => _ButtonTextState();
 }
 
-class _XtextbuttonState extends State<Xtextbutton> {
+class _ButtonTextState extends State<ButtonText> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(

@@ -1,11 +1,11 @@
 import 'package:camellia/shared/shared.dart';
-import 'package:camellia/widgets/display/x_title.dart';
-import 'package:flutter/material.dart';
+import 'package:camellia/widgets/display/text_title.dart';
+import 'package:flutter/material.dart' hide Title;
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 
-class CInput extends StatefulWidget {
-  const CInput({
+class FormInput extends StatefulWidget {
+  const FormInput({
     super.key,
     this.title,
     required this.bindKey,
@@ -51,10 +51,10 @@ class CInput extends StatefulWidget {
   final String initialValue;
 
   @override
-  State<CInput> createState() => _CInputState();
+  State<FormInput> createState() => _FormInputState();
 }
 
-class _CInputState extends State<CInput> {
+class _FormInputState extends State<FormInput> {
   @override
   void initState() {
     super.initState();
@@ -69,7 +69,7 @@ class _CInputState extends State<CInput> {
       children: [
         // 配置标题
         if (widget.title != null)
-          Xtitle(
+          TextTitle(
             title: widget.title!,
             fontWeight: widget.titleFontWeight,
             fontSize: widget.titleFontSize,

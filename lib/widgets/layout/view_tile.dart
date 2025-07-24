@@ -1,8 +1,8 @@
 import 'package:camellia/shared/shared.dart';
 import 'package:flutter/material.dart';
 
-class XTileView extends StatefulWidget {
-  const XTileView({super.key, required this.items, this.spacing = 10});
+class ViewTile extends StatefulWidget {
+  const ViewTile({super.key, required this.items, this.spacing = 10});
 
   // 列表
   final List<XTileViewItem> items;
@@ -11,10 +11,10 @@ class XTileView extends StatefulWidget {
   final double spacing;
 
   @override
-  State<XTileView> createState() => _XTileViewState();
+  State<ViewTile> createState() => _ViewTileState();
 }
 
-class _XTileViewState extends State<XTileView> {
+class _ViewTileState extends State<ViewTile> {
   @override
   Widget build(BuildContext context) {
     return GridView(

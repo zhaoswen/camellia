@@ -2,17 +2,17 @@ import 'package:camellia/shared/shared.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_switch/flutter_advanced_switch.dart';
 
-import '../display/x_title.dart';
+import '../display/text_title.dart';
 
 // 开关组件
-class XSwitch extends StatefulWidget {
+class FormSwitch extends StatefulWidget {
   final bool value;
   final String title;
   final double titleFontSize;
   final FontWeight titleFontWeight;
   final ValueChanged<dynamic> onChanged;
 
-  const XSwitch({
+  const FormSwitch({
     super.key,
     required this.value,
     required this.onChanged,
@@ -22,10 +22,10 @@ class XSwitch extends StatefulWidget {
   });
 
   @override
-  XSwitchState createState() => XSwitchState();
+  FormSwitchState createState() => FormSwitchState();
 }
 
-class XSwitchState extends State<XSwitch> {
+class FormSwitchState extends State<FormSwitch> {
   final _controller00 = ValueNotifier<bool>(false);
 
   @override
@@ -40,7 +40,7 @@ class XSwitchState extends State<XSwitch> {
       crossAxisAlignment: CrossAxisAlignment.start,
       spacing: 5,
       children: [
-        Xtitle(
+        TextTitle(
           title: widget.title,
           fontWeight: widget.titleFontWeight,
           fontSize: widget.titleFontSize,

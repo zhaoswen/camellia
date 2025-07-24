@@ -1,15 +1,15 @@
-import 'package:camellia/widgets/display/x_message.dart';
+import 'package:camellia/widgets/display/message.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../../../shared/shared.dart';
 import '../layout/dialog_basic.dart';
-import '../operator/x_button_icon.dart';
-import 'c_input.dart';
+import '../operator/button_icon.dart';
+import 'form_input.dart';
 
-class XMapEditor extends StatefulWidget {
-  const XMapEditor({
+class FormMapEditor extends StatefulWidget {
+  const FormMapEditor({
     super.key,
     required this.title,
     required this.onCommit,
@@ -34,10 +34,10 @@ class XMapEditor extends StatefulWidget {
   final Map<String, dynamic>? Function()? getInitData;
 
   @override
-  State<XMapEditor> createState() => _XMapEditorState();
+  State<FormMapEditor> createState() => _FormMapEditorState();
 }
 
-class _XMapEditorState extends State<XMapEditor> {
+class _FormMapEditorState extends State<FormMapEditor> {
   @override
   void initState() {
     super.initState();
@@ -116,10 +116,10 @@ class _XMapEditorState extends State<XMapEditor> {
         map[element] = data[element];
       }
     }
-    showXDialogBasic(
+    showDialogBasic(
       context: context,
       title: widget.title,
-      header: XIconButton(
+      header: ButtonIcon(
         iconData: HugeIcons.strokeRoundedAddSquare,
         onPressed: () {
           map["key"] = "value";
@@ -186,7 +186,7 @@ class _XMapEditorState extends State<XMapEditor> {
                           children: [
                             Expanded(
                               flex: 3,
-                              child: CInput(
+                              child: FormInput(
                                 bindKey: 'name',
                                 focusNode: keyFocusNodes[index],
                                 initialValue: key,
@@ -197,7 +197,7 @@ class _XMapEditorState extends State<XMapEditor> {
                             ),
                             Expanded(
                               flex: 7,
-                              child: CInput(
+                              child: FormInput(
                                 bindKey: 'value',
                                 initialValue: map[key] ?? "",
                                 onChanged: (val) {
@@ -205,7 +205,7 @@ class _XMapEditorState extends State<XMapEditor> {
                                 },
                               ),
                             ),
-                            XIconButton(
+                            ButtonIcon(
                               backgroundColor: setting
                                   .theme
                                   .value

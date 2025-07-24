@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../entity/common.dart';
 
-class XDivider extends StatelessWidget {
-  const XDivider({
+class Divider extends StatelessWidget {
+  const Divider({
     super.key,
     required this.direction,
     this.width = 1,

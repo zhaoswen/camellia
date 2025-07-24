@@ -9,8 +9,8 @@ class TabItem {
   TabItem({required this.title, required this.content});
 }
 
-class XTab extends StatefulWidget {
-  const XTab({
+class ViewTab extends StatefulWidget {
+  const ViewTab({
     super.key,
     required this.tabs,
     this.spacing = 0,
@@ -35,10 +35,10 @@ class XTab extends StatefulWidget {
   final int defaultIndex;
 
   @override
-  State<XTab> createState() => _XTabState();
+  State<ViewTab> createState() => _ViewTabState();
 }
 
-class _XTabState extends State<XTab> {
+class _ViewTabState extends State<ViewTab> {
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -1,8 +1,8 @@
 import 'package:camellia/shared/shared.dart';
 import 'package:flutter/cupertino.dart';
 
-class XLogger extends StatefulWidget {
-  const XLogger({super.key});
+class Logger extends StatefulWidget {
+  const Logger({super.key});
 
   // 日志内容
 
@@ -29,10 +29,10 @@ class XLogger extends StatefulWidget {
   // 提示颜色
 
   @override
-  State<XLogger> createState() => _XLoggerState();
+  State<Logger> createState() => _LoggerState();
 }
 
-class _XLoggerState extends State<XLogger> {
+class _LoggerState extends State<Logger> {
   @override
   Widget build(BuildContext context) {
     return Container(

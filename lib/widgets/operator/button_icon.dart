@@ -2,7 +2,7 @@ import 'package:camellia/shared/shared.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-class XIconButton extends StatefulWidget {
+class ButtonIcon extends StatefulWidget {
   final IconData iconData;
   final VoidCallback? onPressed;
   final String? tooltip;
@@ -18,7 +18,7 @@ class XIconButton extends StatefulWidget {
   final double height;
   final double iconSize;
 
-  const XIconButton({
+  const ButtonIcon({
     super.key,
     required this.iconData,
     this.onPressed,
@@ -37,10 +37,10 @@ class XIconButton extends StatefulWidget {
   });
 
   @override
-  State<XIconButton> createState() => _XIconButtonState();
+  State<ButtonIcon> createState() => _ButtonIconState();
 }
 
-class _XIconButtonState extends State<XIconButton> {
+class _ButtonIconState extends State<ButtonIcon> {
   @override
   Widget build(BuildContext context) {
     return widget.isDisplayed

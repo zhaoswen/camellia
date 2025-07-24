@@ -1,16 +1,16 @@
 import 'package:camellia/shared/shared.dart';
-import 'package:camellia/widgets/display/x_title.dart';
-import 'package:camellia/widgets/form/x_search.dart';
-import 'package:camellia/widgets/layout/x_tab.dart';
-import 'package:camellia/widgets/operator/x_button_text.dart';
+import 'package:camellia/widgets/display/text_title.dart';
+import 'package:camellia/widgets/operator/search.dart';
+import 'package:camellia/widgets/layout/view_tab.dart';
+import 'package:camellia/widgets/operator/button_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 
 import '../layout/dialog_basic.dart';
 
-class XformTextSelect extends StatefulWidget {
-  const XformTextSelect({
+class FormTextSelect extends StatefulWidget {
+  const FormTextSelect({
     super.key,
     required this.title,
     required this.bindKey,
@@ -39,10 +39,10 @@ class XformTextSelect extends StatefulWidget {
   final String initialValue;
 
   @override
-  State<XformTextSelect> createState() => _XformTextSelectState();
+  State<FormTextSelect> createState() => _FormTextSelectState();
 }
 
-class _XformTextSelectState extends State<XformTextSelect> {
+class _FormTextSelectState extends State<FormTextSelect> {
   var currentSelect = "";
 
   @override
@@ -53,7 +53,7 @@ class _XformTextSelectState extends State<XformTextSelect> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // 配置标题
-        Xtitle(title: widget.title, fontSize: 14),
+        TextTitle(title: widget.title, fontSize: 14),
         // 配置内容
         Container(
           margin: EdgeInsets.only(bottom: 20),
@@ -128,12 +128,12 @@ class _XformTextSelectState extends State<XformTextSelect> {
               SizedBox(width: 5),
               SizedBox(
                 height: 27,
-                child: Xtextbutton(
+                child: ButtonText(
                   width: 55,
                   onPressed: () async => {
-                    showXDialogBasic(
+                    showDialogBasic(
                       context: context,
-                      header: XSearch(hintText: '输入关键字'),
+                      header: Search(hintText: '输入关键字'),
                       title: '选择处理器',
                       width: 800,
                       onConfirm: () {
@@ -151,7 +151,7 @@ class _XformTextSelectState extends State<XformTextSelect> {
                       },
                       content: SizedBox(
                         height: 400,
-                        child: XTab(tabs: makeTab(widget.options), spacing: 10),
+                        child: ViewTab(tabs: makeTab(widget.options), spacing: 10),
                       ),
                     ),
                   },

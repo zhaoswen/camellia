@@ -1,8 +1,8 @@
 import 'package:camellia/shared/shared.dart';
 import 'package:flutter/material.dart';
 
-class Xtextlink extends StatefulWidget {
-  const Xtextlink({
+class TextLink extends StatefulWidget {
+  const TextLink({
     super.key,
     required this.onPressed,
     required this.text,
@@ -19,10 +19,10 @@ class Xtextlink extends StatefulWidget {
   final double height;
 
   @override
-  State<Xtextlink> createState() => _XtextlinkState();
+  State<TextLink> createState() => _TextLinkState();
 }
 
-class _XtextlinkState extends State<Xtextlink> {
+class _TextLinkState extends State<TextLink> {
   bool _isHovered = false;
 
   @override

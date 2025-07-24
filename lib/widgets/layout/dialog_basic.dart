@@ -1,15 +1,15 @@
 import 'package:camellia/shared/shared.dart';
-import 'package:camellia/widgets/display/x_empty.dart';
+import 'package:camellia/widgets/display/empty.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 // 弹出对话框
-void showXDialogBasic({
+void showDialogBasic({
   required BuildContext context,
   required String title,
   double width = 500,
   double height = 500,
-  Widget content = const XEmpty(),
+  Widget content = const Empty(),
   bool showButton = true,
   bool showHeader = true,
   String confirm = "",

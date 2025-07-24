@@ -20,3 +20,9 @@
 * Added dynamic parameter support to the CWelcome component and renamed it to TextGradient
 * Renamed CList component to DataList, which will be used to display data lists
 * Renamed CConsole to LogConsole, which will subsequently be used solely for logging purposes
+
+## 1.0.4
+
+* Re-standardize component names
+* Remove unused data and optimize package size
+* Organize package structure

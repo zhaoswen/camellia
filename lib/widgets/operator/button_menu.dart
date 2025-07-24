@@ -2,8 +2,8 @@ import 'package:camellia/shared/shared.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-class Xmenubutton extends StatefulWidget {
-  const Xmenubutton({
+class ButtonMenu extends StatefulWidget {
+  const ButtonMenu({
     super.key,
     this.title = "",
     this.menuItems = const [],
@@ -37,10 +37,10 @@ class Xmenubutton extends StatefulWidget {
 
   @override
   // ignore: library_private_types_in_public_api
-  _XmenubuttonState createState() => _XmenubuttonState();
+  _ButtonMenuState createState() => _ButtonMenuState();
 }
 
-class _XmenubuttonState extends State<Xmenubutton> {
+class _ButtonMenuState extends State<ButtonMenu> {
   OverlayEntry? _overlayEntry;
   bool _isMenuOpen = false;
 

@@ -1,5 +1,5 @@
 import 'package:camellia/shared/shared.dart';
-import 'package:camellia/widgets/operator/x_link_text.dart';
+import 'package:camellia/widgets/operator/link_text.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -62,7 +62,7 @@ class _BreadcrumbState extends State<Breadcrumb> {
     List<Widget> list = [];
     for (int i = 0; i < widget.items.length; i++) {
       list.add(
-        Xtextlink(
+        TextLink(
           onPressed: widget.items[i].onTap,
           height: 20,
           text: widget.items[i].title,

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 // 单选框组组件
-class XRadioGroup<T> extends StatefulWidget {
+class FormRadioGroup<T> extends StatefulWidget {
   final List<XRadioOption<T>> options;
   final T? value;
   final ValueChanged<T?> onChanged;
 
-  const XRadioGroup({
+  const FormRadioGroup({
     super.key,
     required this.options,
     this.value,
@@ -14,10 +14,10 @@ class XRadioGroup<T> extends StatefulWidget {
   });
 
   @override
-  XRadioGroupState<T> createState() => XRadioGroupState<T>();
+  FormRadioGroupState<T> createState() => FormRadioGroupState<T>();
 }
 
-class XRadioGroupState<T> extends State<XRadioGroup<T>> {
+class FormRadioGroupState<T> extends State<FormRadioGroup<T>> {
   T? _selectedValue;
 
   @override

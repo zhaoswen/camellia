@@ -5,8 +5,8 @@ import 'package:hugeicons/hugeicons.dart';
 import '../../../shared/shared.dart';
 
 // 空状态组件
-class XEmpty extends StatelessWidget {
-  const XEmpty({
+class Empty extends StatelessWidget {
+  const Empty({
     super.key,
     this.text = "暂无数据",
     this.showIcon = false,

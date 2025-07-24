@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 
 // 树组件
-class Xtree extends StatefulWidget {
-  const Xtree({super.key});
+class Tree extends StatefulWidget {
+  const Tree({super.key});
 
   @override
-  State<Xtree> createState() => _XtreeState();
+  State<Tree> createState() => _TreeState();
 }
 
-class _XtreeState extends State<Xtree> {
+class _TreeState extends State<Tree> {
   @override
   Widget build(BuildContext context) {
     return const Placeholder();

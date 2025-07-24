@@ -1,11 +1,11 @@
 import 'package:camellia/shared/shared.dart';
-import 'package:camellia/widgets/display/x_title.dart';
+import 'package:camellia/widgets/display/text_title.dart';
 import 'package:dropdown_flutter/custom_dropdown.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 // 选择器组件（下拉框）
-class Xselect extends StatefulWidget {
+class FormSelect extends StatefulWidget {
   final List<dynamic> options;
   final dynamic value;
   final ValueChanged<dynamic> onChanged;
@@ -19,7 +19,7 @@ class Xselect extends StatefulWidget {
   // 后缀组件
   final Widget? suffixWidget;
 
-  const Xselect({
+  const FormSelect({
     super.key,
     required this.options,
     this.value,
@@ -34,10 +34,10 @@ class Xselect extends StatefulWidget {
   });
 
   @override
-  State<Xselect> createState() => _XselectState();
+  State<FormSelect> createState() => _FormSelectState();
 }
 
-class _XselectState extends State<Xselect> {
+class _FormSelectState extends State<FormSelect> {
   late List<dynamic> _options; // 添加私有变量来存储 options 的副本
   List<String> selectedValue = [];
 
@@ -58,7 +58,7 @@ class _XselectState extends State<Xselect> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         if (widget.label != "")
-          Xtitle(
+          TextTitle(
             title: widget.label,
             fontSize: widget.fontSize,
             fontWeight: widget.fontWeight,

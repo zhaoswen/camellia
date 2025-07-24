@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
-class XImage extends StatelessWidget {
-  const XImage({
+class Image extends StatelessWidget {
+  const Image({
     super.key,
     required this.url,
     required this.width,

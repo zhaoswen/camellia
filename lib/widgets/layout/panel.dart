@@ -1,7 +1,7 @@
 import 'package:camellia/shared/shared.dart';
 import 'package:flutter/material.dart';
 
-class Xpanel extends StatefulWidget {
+class Panel extends StatefulWidget {
   final String name;
 
   // 边框方向
@@ -16,7 +16,7 @@ class Xpanel extends StatefulWidget {
   // 内容内边距
   final EdgeInsetsGeometry padding;
 
-  const Xpanel({
+  const Panel({
     super.key,
     required this.name,
     this.content = const Text(""),
@@ -31,10 +31,10 @@ class Xpanel extends StatefulWidget {
   });
 
   @override
-  State<Xpanel> createState() => _XpanelState();
+  State<Panel> createState() => _PanelState();
 }
 
-class _XpanelState extends State<Xpanel> {
+class _PanelState extends State<Panel> {
   @override
   Widget build(BuildContext context) {
     return Container(

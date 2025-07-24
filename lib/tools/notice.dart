@@ -12,7 +12,7 @@ void checkSaveStatus(
   // 如果有未保存的修改，
   if (!runtime.saved.value) {
     // 弹出提示框
-    showXDialogAlert(
+    showDialogAlert(
       context: context,
       title: "警告",
       content: "有未保存的修改，是否保存？",

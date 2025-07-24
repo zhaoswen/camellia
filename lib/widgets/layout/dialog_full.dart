@@ -2,7 +2,7 @@ import 'package:camellia/shared/shared.dart';
 import 'package:flutter/material.dart';
 
 // 全屏对话框（独占）
-Future<void> showXDialogFull(
+Future<void> showDialogFull(
   BuildContext context,
   // 对话框标题
   String title,
