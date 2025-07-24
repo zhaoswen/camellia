@@ -13,11 +13,11 @@
     <a href="https://pro.zhaosw.site/docs/camellia/quick-start"><strong>Read Document »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/zhaoswen/camellia">Code</a>
+    <a href="https://github.com/zhaoswen/camellia">Github</a>
      · 
     <a href="https://github.com/zhaoswen/camellia/issues">Issues</a>
      · 
-    <a href="https://pub.dev/packages/camellia">Library</a>
+    <a href="https://github.com/zhaoswen/camellia/blob/main/doc/Readme_CN.md">简体中文</a>
   </p>
 
 ⚠️ Warning: This project is currently in the testing phase. Many component functions are not yet complete, and some components may undergo significant incompatible changes such as name modifications. It is recommended to use this library officially after version 2.0.
@@ -40,6 +40,4 @@ dependencies:
 ```
 
 Alternatively, your editor might support flutter pub get. Check the docs for your editor to learn more.
-
-## Usage
 
