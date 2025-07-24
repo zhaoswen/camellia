@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../shared/shared.dart';
+
 
 class TextTitle extends StatelessWidget {
   const TextTitle({
@@ -39,10 +39,10 @@ class TextTitle extends StatelessWidget {
       child: Text(
         title,
         style: TextStyle(
-          fontFamily: setting.theme.value.fonts.family,
+          
           fontSize: fontSize,
           fontWeight: fontWeight,
-          color: setting.theme.value.colors.title.getColor(),
+          color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
         ),
       ),
     );

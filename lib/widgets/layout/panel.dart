@@ -1,4 +1,4 @@
-import 'package:camellia/shared/shared.dart';
+
 import 'package:flutter/material.dart';
 
 class Panel extends StatefulWidget {
@@ -39,23 +39,23 @@ class _PanelState extends State<Panel> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: setting.theme.value.colors.background.getColor(),
+        color: Theme.of(context).scaffoldBackgroundColor,
         border: Border(
           right: widget.border == "right"
               ? BorderSide(
-                  color: setting.theme.value.colors.separator.getColor(),
+                  color: Theme.of(context).dividerColor,
                   width: 1,
                 )
               : BorderSide.none,
           left: widget.border == "left"
               ? BorderSide(
-                  color: setting.theme.value.colors.separator.getColor(),
+                  color: Theme.of(context).dividerColor,
                   width: 1,
                 )
               : BorderSide.none,
           top: widget.border == "top"
               ? BorderSide(
-                  color: setting.theme.value.colors.separator.getColor(),
+                  color: Theme.of(context).dividerColor,
                   width: 1,
                 )
               : BorderSide.none,
@@ -72,7 +72,7 @@ class _PanelState extends State<Panel> {
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: setting.theme.value.colors.separator.getColor(),
+                  color: Theme.of(context).dividerColor,
                   width: 1,
                 ),
               ),
@@ -85,8 +85,8 @@ class _PanelState extends State<Panel> {
                   widget.name,
                   style: TextStyle(
                     fontSize: 13,
-                    fontFamily: setting.theme.value.fonts.family,
-                    color: setting.theme.value.colors.title.getColor(),
+                    
+                    color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
                     fontWeight: FontWeight.w400,
                     decoration: TextDecoration.none,
                   ),

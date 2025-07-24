@@ -1,4 +1,3 @@
-import 'package:camellia/shared/shared.dart';
 import 'package:camellia/widgets/operator/link_text.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
@@ -77,7 +76,7 @@ class _BreadcrumbState extends State<Breadcrumb> {
             child: HugeIcon(
               icon: widget.middleIcon,
               size: 13,
-              color: setting.theme.value.colors.subTitle.getColor(),
+              color: Theme.of(context).dividerColor,
             ),
           ),
         );

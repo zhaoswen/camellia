@@ -1,4 +1,4 @@
-import 'package:camellia/shared/shared.dart';
+
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 import '../display/message.dart';
@@ -80,20 +80,20 @@ class _ButtonOperateState extends State<ButtonOperate> {
               },
               tooltip: widget.tooltip,
               hoverColor: widget.isDanger
-                  ? setting.theme.value.colors.danger.getColor().withAlpha(20)
-                  : setting.theme.value.colors.parentBackground.getColor(),
-              focusColor: setting.theme.value.colors.parentBackground
-                  .getColor(),
+                  ? Theme.of(context).colorScheme.error.withAlpha(20)
+                  : Theme.of(context).cardTheme.color,
+              focusColor: Theme.of(context).cardTheme.color
+                  ,
               icon: HugeIcon(
                 icon: widget.iconData,
                 size: widget.iconSize,
                 color: widget.disabled
-                    ? setting.theme.value.colors.disabled.getColor()
+                    ? Theme.of(context).colorScheme.tertiary
                     : widget.isSelected
-                    ? setting.theme.value.colors.primary.getColor()
+                    ? Theme.of(context).primaryColor
                     : isDangerState
-                    ? setting.theme.value.colors.danger.getColor()
-                    : setting.theme.value.colors.standardIcon.getColor(),
+                    ? Theme.of(context).colorScheme.error
+                    : Theme.of(context).iconTheme.color ?? Colors.black54,
               ),
               style: ButtonStyle(
                 shape: WidgetStateProperty.all<RoundedRectangleBorder>(

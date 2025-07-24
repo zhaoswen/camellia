@@ -1,4 +1,4 @@
-import 'package:camellia/shared/shared.dart';
+
 import 'package:flutter/material.dart';
 
 // 弹出对话框
@@ -21,7 +21,7 @@ void showDialogAlert({
     builder: (BuildContext context) {
       return Dialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-        backgroundColor: setting.theme.value.colors.background.getColor(),
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         alignment: Alignment.center,
         child: Container(
           width: width,
@@ -42,7 +42,7 @@ void showDialogAlert({
                     border: Border(
                       bottom: BorderSide(
                         width: 1,
-                        color: setting.theme.value.colors.separator.getColor(),
+                        color: Theme.of(context).dividerColor,
                       ),
                     ),
                   ),
@@ -55,8 +55,8 @@ void showDialogAlert({
                         child: Text(
                           title,
                           style: TextStyle(
-                            fontFamily: setting.theme.value.fonts.family,
-                            color: setting.theme.value.colors.title.getColor(),
+                            
+                            color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
                             // fontWeight: FontWeight.bold,
                             fontSize: 15,
                           ),
@@ -72,8 +72,8 @@ void showDialogAlert({
                     child: Text(
                       content,
                       style: TextStyle(
-                        fontFamily: setting.theme.value.fonts.family,
-                        color: setting.theme.value.colors.subTitle.getColor(),
+                        
+                        color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
                         fontSize: 13,
                       ),
                     ),
@@ -97,9 +97,9 @@ void showDialogAlert({
                           child: Text(
                             confirm,
                             style: TextStyle(
-                              fontFamily: setting.theme.value.fonts.family,
-                              color: setting.theme.value.colors.subTitle
-                                  .getColor(),
+                              
+                              color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
+                                  ,
                               fontSize: 13,
                             ),
                           ),
@@ -113,9 +113,9 @@ void showDialogAlert({
                           child: Text(
                             cancel,
                             style: TextStyle(
-                              fontFamily: setting.theme.value.fonts.family,
-                              color: setting.theme.value.colors.subTitle
-                                  .getColor(),
+                              
+                              color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
+                                  ,
                               fontSize: 13,
                             ),
                           ),

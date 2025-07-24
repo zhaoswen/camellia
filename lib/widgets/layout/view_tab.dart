@@ -1,4 +1,4 @@
-import 'package:camellia/shared/shared.dart';
+
 import 'package:flutter/material.dart';
 
 // 定义标签页数据
@@ -57,15 +57,15 @@ class _ViewTabState extends State<ViewTab> {
                 padding: EdgeInsets.all(5),
                 child: TabBar(
                   // 标签栏指示器颜色
-                  indicatorColor: setting.theme.value.colors.primary.getColor(),
+                  indicatorColor: Theme.of(context).primaryColor,
                   // 分割线颜色
-                  dividerColor: setting.theme.value.colors.separator.getColor(),
+                  dividerColor: Theme.of(context).dividerColor,
                   // 未选中标签文本
-                  unselectedLabelColor: setting.theme.value.colors.subTitle
-                      .getColor(),
+                  unselectedLabelColor: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
+                      ,
                   overlayColor: WidgetStateProperty.all(Colors.transparent),
                   // 选中标签文本
-                  labelColor: setting.theme.value.colors.primary.getColor(),
+                  labelColor: Theme.of(context).primaryColor,
                   // splashBorderRadius: BorderRadius.circular(5),
                   // 标签栏指示器高度
                   indicatorWeight: 3,
@@ -80,7 +80,7 @@ class _ViewTabState extends State<ViewTab> {
                           child: Text(
                             tab.title,
                             style: TextStyle(
-                              fontFamily: setting.theme.value.fonts.family,
+                              
                             ),
                           ),
                         ),

@@ -1,4 +1,4 @@
-import 'package:camellia/shared/shared.dart';
+
 import 'package:flutter/material.dart';
 
 class TextLink extends StatefulWidget {
@@ -37,11 +37,11 @@ class _TextLinkState extends State<TextLink> {
           child: Text(
             widget.text,
             style: TextStyle(
-              fontFamily: setting.theme.value.fonts.family,
+              
               fontSize: 13,
               color: _isHovered
-                  ? setting.theme.value.colors.primary.getColor()
-                  : setting.theme.value.colors.text.getColor(),
+                  ? Theme.of(context).primaryColor
+                  : Theme.of(context).textTheme.bodyMedium?.color ?? Colors.black87,
             ),
           ),
         ),

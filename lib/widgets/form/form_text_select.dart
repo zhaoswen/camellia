@@ -1,4 +1,4 @@
-import 'package:camellia/shared/shared.dart';
+
 import 'package:camellia/widgets/display/text_title.dart';
 import 'package:camellia/widgets/operator/search.dart';
 import 'package:camellia/widgets/layout/view_tab.dart';
@@ -66,28 +66,29 @@ class _FormTextSelectState extends State<FormTextSelect> {
                   readOnly: true,
                   style: TextStyle(
                     fontSize: 13,
-                    color: setting.theme.value.colors.inputText.getColor(),
-                    fontFamily: setting.theme.value.fonts.family,
+                    // color: setting.theme.value.colors.inputText,
+                    // color: Theme.of(context).inputDecorationTheme.,
+
                   ),
-                  cursorColor: setting.theme.value.colors.primary.getColor(),
+                  cursorColor: Theme.of(context).primaryColor,
                   cursorHeight: 15,
-                  cursorErrorColor: setting.theme.value.colors.danger
-                      .getColor(),
+                  // cursorErrorColor: Theme.of(context).colorScheme.error
+                  //     ,
                   cursorRadius: Radius.circular(10),
                   decoration: InputDecoration(
                     labelStyle: TextStyle(
-                      color: setting.theme.value.colors.standardIcon.getColor(),
-                      fontFamily: setting.theme.value.fonts.family,
+                      color: Theme.of(context).iconTheme.color,
+                      
                     ),
                     hintStyle: TextStyle(
-                      color: setting.theme.value.colors.standardIcon.getColor(),
-                      fontFamily: setting.theme.value.fonts.family,
+                      color: Theme.of(context).iconTheme.color,
+                      
                     ),
                     isDense: true,
                     errorMaxLines: 1,
                     filled: true,
-                    fillColor: setting.theme.value.colors.inputBackground
-                        .getColor(),
+                    fillColor: Theme.of(context).scaffoldBackgroundColor
+                        ,
                     contentPadding: const EdgeInsets.symmetric(
                       vertical: 8,
                       horizontal: 12,
@@ -96,7 +97,7 @@ class _FormTextSelectState extends State<FormTextSelect> {
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
                       borderSide: BorderSide(
-                        color: setting.theme.value.colors.primary.getColor(),
+                        color: Theme.of(context).primaryColor,
                         width: 1,
                       ),
                     ),
@@ -104,8 +105,8 @@ class _FormTextSelectState extends State<FormTextSelect> {
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
                       borderSide: BorderSide(
-                        color: setting.theme.value.colors.inputBorder
-                            .getColor(),
+                        color: Theme.of(context).inputDecorationTheme.border?.borderSide.color ?? Colors.black54
+                            ,
                         width: 1,
                       ),
                     ),
@@ -179,13 +180,13 @@ class _FormTextSelectState extends State<FormTextSelect> {
             itemBuilder: (context, index) {
               return ListTile(
                 titleTextStyle: TextStyle(
-                  color: setting.theme.value.colors.title.getColor(),
-                  fontFamily: setting.theme.value.fonts.family,
+                  color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
+                  
                   fontSize: 13,
                 ),
                 subtitleTextStyle: TextStyle(
-                  color: setting.theme.value.colors.subTitle.getColor(),
-                  fontFamily: setting.theme.value.fonts.family,
+                  color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
+                  
                   fontSize: 11,
                 ),
                 shape: RoundedRectangleBorder(

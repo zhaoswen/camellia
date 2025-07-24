@@ -1,5 +1,5 @@
-import 'package:camellia/shared/shared.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class Search extends StatefulWidget {
@@ -29,21 +29,21 @@ class _SearchState extends State<Search> {
       onSubmitted: widget.onSubmitted,
       prefix: HugeIcon(
         icon: HugeIcons.strokeRoundedSearch01,
-        color: setting.theme.value.colors.subTitle.getColor(),
+        color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
         size: 13,
       ),
       style: TextStyle(
         fontSize: 13,
-        fontFamily: setting.theme.value.fonts.family,
-        color: setting.theme.value.colors.subTitle.getColor(),
+        
+        color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
       ),
       cursorHeight: 12,
-      cursorColor: setting.theme.value.colors.primary.getColor(),
+      cursorColor: Theme.of(context).primaryColor,
       cursorRadius: Radius.circular(5),
       decoration: BoxDecoration(
-        color: setting.theme.value.colors.inputBackground.getColor(),
+        color: Theme.of(context).scaffoldBackgroundColor,
         border: Border.all(
-          color: setting.theme.value.colors.separator.getColor(),
+          color: Theme.of(context).dividerColor,
         ),
         borderRadius: BorderRadius.circular(5.0),
       ),

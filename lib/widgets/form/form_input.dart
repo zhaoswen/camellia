@@ -1,4 +1,4 @@
-import 'package:camellia/shared/shared.dart';
+
 import 'package:camellia/widgets/display/text_title.dart';
 import 'package:flutter/material.dart' hide Title;
 import 'package:flutter_form_builder/flutter_form_builder.dart';
@@ -86,31 +86,29 @@ class _FormInputState extends State<FormInput> {
 
           style: TextStyle(
             fontSize: 13,
-            color: setting.theme.value.colors.inputText.getColor(),
-            fontFamily: setting.theme.value.fonts.family,
+
           ),
-          cursorColor: setting.theme.value.colors.primary.getColor(),
+          cursorColor: Theme.of(context).primaryColor,
           cursorHeight: 15,
-          cursorErrorColor: setting.theme.value.colors.danger.getColor(),
           cursorRadius: Radius.circular(10),
           decoration: InputDecoration(
             labelStyle: TextStyle(
-              color: setting.theme.value.colors.standardIcon.getColor(),
-              fontFamily: setting.theme.value.fonts.family,
+              color: Theme.of(context).iconTheme.color,
+              
             ),
             hintStyle: TextStyle(
-              color: setting.theme.value.colors.standardIcon.getColor(),
-              fontFamily: setting.theme.value.fonts.family,
+              color: Theme.of(context).iconTheme.color,
+              
             ),
             isDense: true,
             errorMaxLines: 1,
             filled: true,
             // 选中的文本
-            fillColor: setting.theme.value.colors.inputBackground.getColor(),
-            focusColor: setting.theme.value.colors.primary.getColor(),
+            fillColor: Theme.of(context).scaffoldBackgroundColor,
+            focusColor: Theme.of(context).primaryColor,
             hoverColor: widget.readOnly
-                ? setting.theme.value.colors.warning.getColor().withAlpha(10)
-                : setting.theme.value.colors.primary.getColor().withAlpha(10),
+                ? Theme.of(context).colorScheme.primaryContainer.withAlpha(10)
+                : Theme.of(context).primaryColor.withAlpha(10),
             contentPadding: const EdgeInsets.symmetric(
               vertical: 8,
               horizontal: 8,
@@ -120,8 +118,8 @@ class _FormInputState extends State<FormInput> {
               borderRadius: BorderRadius.circular(5),
               borderSide: BorderSide(
                 color: widget.readOnly
-                    ? setting.theme.value.colors.warning.getColor()
-                    : setting.theme.value.colors.primary.getColor(),
+                    ? Theme.of(context).colorScheme.primaryContainer
+                    : Theme.of(context).primaryColor,
                 width: 1,
               ),
             ),
@@ -130,8 +128,8 @@ class _FormInputState extends State<FormInput> {
               borderRadius: BorderRadius.circular(5),
               borderSide: BorderSide(
                 color: (widget.isWarning ?? false)
-                    ? setting.theme.value.colors.danger.getColor()
-                    : setting.theme.value.colors.inputBorder.getColor(),
+                    ? Theme.of(context).colorScheme.error
+                    : Theme.of(context).inputDecorationTheme.border?.borderSide.color ?? Colors.black54,
                 width: 1,
               ),
             ),

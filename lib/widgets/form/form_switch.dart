@@ -1,4 +1,4 @@
-import 'package:camellia/shared/shared.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_switch/flutter_advanced_switch.dart';
 
@@ -50,10 +50,10 @@ class FormSwitchState extends State<FormSwitch> {
             width: 40,
             height: 20,
             borderRadius: BorderRadius.circular(20),
-            activeColor: setting.theme.value.colors.primary.getColor(),
-            inactiveColor: setting.theme.value.colors.parentBackground
-                .getReverseColor()
-                .withAlpha(100),
+            activeColor: Theme.of(context).primaryColor,
+            // inactiveColor: Theme.of(context).cardTheme.color
+            //     .getReverseColor()
+            //     .withAlpha(100),
             controller: _controller00,
             initialValue: widget.value,
             onChanged: widget.onChanged,
@@ -63,7 +63,7 @@ class FormSwitchState extends State<FormSwitch> {
                 return Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: setting.theme.value.colors.background.getColor(),
+                    color: Theme.of(context).scaffoldBackgroundColor,
                   ),
                 );
               },

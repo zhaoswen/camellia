@@ -1,4 +1,4 @@
-import 'package:camellia/shared/shared.dart';
+
 import 'package:flutter/material.dart';
 
 class ViewTile extends StatefulWidget {
@@ -42,14 +42,14 @@ class _ViewTileState extends State<ViewTile> {
                   Icon(
                     item.icon,
                     size: 25,
-                    color: setting.theme.value.colors.title.getColor(),
+                    color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
                   ),
                 Text(
                   item.title,
                   style: TextStyle(
                     fontSize: 12,
-                    fontFamily: setting.theme.value.fonts.family,
-                    color: setting.theme.value.colors.subTitle.getColor(),
+                    
+                    color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
                     // 截断
                     overflow: TextOverflow.ellipsis,
                   ),

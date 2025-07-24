@@ -1,5 +1,6 @@
-import 'package:camellia/shared/shared.dart';
-import 'package:camellia/tools/logger.dart';
+import 'dart:developer';
+
+
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -64,12 +65,12 @@ class MessageOverlay {
                 //     child: Container(
                 //       decoration: BoxDecoration(
                 //         borderRadius: BorderRadius.circular(13.0),
-                //         // color: setting.theme.value.colors.background
-                //         //     .getColor()
+                //         // color: Theme.of(context).scaffoldBackgroundColor
+                //         //     
                 //         //     .withAlpha(250),
                 //         border: Border.all(
-                //           color: setting.theme.value.colors.subTitle
-                //               .getColor()
+                //           color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
+                //               
                 //               .withAlpha(100),
                 //           width: 0.5,
                 //         ),
@@ -82,18 +83,16 @@ class MessageOverlay {
                     alignment: Alignment.centerLeft,
                     padding: EdgeInsets.fromLTRB(20, 5, 20, 5),
                     decoration: BoxDecoration(
-                      color: setting.theme.value.colors.background.getColor(),
+                      color: Theme.of(context).scaffoldBackgroundColor,
                       borderRadius: BorderRadius.circular(13.0),
                       border: Border.all(
-                        color: setting.theme.value.colors.subTitle
-                            .getColor()
+                        color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
                             .withAlpha(100),
                         width: 0.5,
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: setting.theme.value.colors.subTitle
-                              .getColor()
+                          color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
                               .withAlpha(50),
                           blurRadius: 5.0,
                           offset: Offset(1, 1),
@@ -115,9 +114,9 @@ class MessageOverlay {
                               title,
                               style: TextStyle(
                                 fontSize: 13.0,
-                                color: getMainColor(type),
+                                color: getMainColor(type, context),
                                 decoration: TextDecoration.none,
-                                fontFamily: setting.theme.value.fonts.family,
+                                
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -134,8 +133,8 @@ class MessageOverlay {
                                 icon: HugeIcon(
                                   icon: HugeIcons.strokeRoundedClean,
                                   size: 13,
-                                  color: setting.theme.value.colors.primary
-                                      .getColor(),
+                                  color: Theme.of(context).primaryColor
+                                      ,
                                 ),
                               ),
                             ),
@@ -145,9 +144,9 @@ class MessageOverlay {
                           message,
                           style: TextStyle(
                             fontSize: 12.0,
-                            color: setting.theme.value.colors.title.getColor(),
+                            color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
                             decoration: TextDecoration.none,
-                            fontFamily: setting.theme.value.fonts.family,
+                            
                             fontWeight: FontWeight.normal,
                           ),
                         ),
@@ -173,7 +172,7 @@ class MessageOverlay {
 
           _entries.remove(entry);
         } catch (e) {
-          log(LogType.warning, "侦测到非异常错误，提示框被手动移除", LogRecorder.ui);
+          log("some error in delayed message");
         }
       }
     });
@@ -207,16 +206,16 @@ class MessageOverlay {
     return {'top': top, 'bottom': bottom, 'right': right, 'left': left};
   }
 
-  static Color getMainColor(MessageType type) {
+  static Color getMainColor(MessageType type, BuildContext context) {
     switch (type) {
       case MessageType.success:
-        return setting.theme.value.colors.success.getColor();
+        return Theme.of(context).colorScheme.secondary;
       case MessageType.error:
-        return setting.theme.value.colors.danger.getColor();
+        return Theme.of(context).colorScheme.error;
       case MessageType.warning:
-        return setting.theme.value.colors.warning.getColor();
+        return Theme.of(context).colorScheme.primaryContainer;
       case MessageType.info:
-        return setting.theme.value.colors.primary.getColor();
+        return Theme.of(context).primaryColor;
     }
   }
 }

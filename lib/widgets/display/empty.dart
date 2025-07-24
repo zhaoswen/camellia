@@ -2,8 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-import '../../../shared/shared.dart';
-
 // 空状态组件
 class Empty extends StatelessWidget {
   const Empty({
@@ -36,7 +34,7 @@ class Empty extends StatelessWidget {
               HugeIcon(
                 icon: icon,
                 size: 40,
-                color: setting.theme.value.colors.subTitle.getColor().withAlpha(
+                color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54.withAlpha(
                   50,
                 ),
               )
@@ -46,10 +44,10 @@ class Empty extends StatelessWidget {
               Text(
                 text,
                 style: TextStyle(
-                  color: setting.theme.value.colors.subTitle
-                      .getColor()
+                  color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
+                      
                       .withAlpha(200),
-                  fontFamily: setting.theme.value.fonts.family,
+                  
                   fontWeight: FontWeight.normal,
                   fontSize: size,
                 ),

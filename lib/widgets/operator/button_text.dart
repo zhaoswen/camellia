@@ -1,4 +1,4 @@
-import 'package:camellia/shared/shared.dart';
+
 import 'package:flutter/material.dart';
 
 class ButtonText extends StatefulWidget {
@@ -40,17 +40,17 @@ class _ButtonTextState extends State<ButtonText> {
           ),
           // 背景
           backgroundColor: WidgetStateProperty.all(
-            setting.theme.value.colors.inputBackground.getColor(),
+            Theme.of(context).scaffoldBackgroundColor,
           ),
           foregroundColor: WidgetStateProperty.all(
-            setting.theme.value.colors.title.getColor(),
+            Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
           ),
           overlayColor: WidgetStateProperty.all(
-            setting.theme.value.colors.parentBackground.getColor(),
+            Theme.of(context).cardTheme.color,
           ),
           textStyle: WidgetStateProperty.all(
             TextStyle(
-              fontFamily: setting.theme.value.fonts.family,
+              
               fontSize: 13,
             ),
           ),

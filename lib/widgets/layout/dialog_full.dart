@@ -1,4 +1,4 @@
-import 'package:camellia/shared/shared.dart';
+
 import 'package:flutter/material.dart';
 
 // 全屏对话框（独占）
@@ -21,7 +21,7 @@ Future<void> showDialogFull(
             return Container(
               width: constraints.maxWidth,
               height: constraints.maxHeight,
-              color: setting.theme.value.colors.background.getColor(), // 背景颜色
+              color: Theme.of(context).scaffoldBackgroundColor, // 背景颜色
               child: SafeArea(
                 child: Column(
                   children: [
@@ -32,8 +32,8 @@ Future<void> showDialogFull(
                       decoration: BoxDecoration(
                         border: Border(
                           bottom: BorderSide(
-                            color: setting.theme.value.colors.separator
-                                .getColor(),
+                            color: Theme.of(context).dividerColor
+                                ,
                             width: 1,
                           ),
                         ),
@@ -44,9 +44,9 @@ Future<void> showDialogFull(
                           Text(
                             title,
                             style: TextStyle(
-                              color: setting.theme.value.colors.title
-                                  .getColor(),
-                              fontFamily: setting.theme.value.fonts.family,
+                              color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black
+                                  ,
+                              
                               fontSize: 14,
                             ),
                           ),
@@ -61,8 +61,8 @@ Future<void> showDialogFull(
                       decoration: BoxDecoration(
                         border: Border(
                           top: BorderSide(
-                            color: setting.theme.value.colors.separator
-                                .getColor(),
+                            color: Theme.of(context).dividerColor
+                                ,
                             width: 1,
                           ),
                         ),

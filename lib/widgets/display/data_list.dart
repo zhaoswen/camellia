@@ -1,4 +1,3 @@
-import 'package:camellia/shared/shared.dart';
 import 'package:drag_and_drop_lists/drag_and_drop_lists.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
@@ -32,7 +31,7 @@ class _DataListState extends State<DataList> {
                 children: [
                   HugeIcon(
                     icon: HugeIcons.strokeRoundedInformationSquare,
-                    color: setting.theme.value.colors.subTitle.getColor(),
+                    color: Theme.of(context).iconTheme.color ?? Colors.black87,
                     size: 13,
                   ),
                   Text('选项 1'),
@@ -49,7 +48,7 @@ class _DataListState extends State<DataList> {
                 children: [
                   HugeIcon(
                     icon: HugeIcons.strokeRoundedInformationSquare,
-                    color: setting.theme.value.colors.subTitle.getColor(),
+                    color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
                     size: 13,
                   ),
                   Text('选项 2'),
@@ -66,7 +65,7 @@ class _DataListState extends State<DataList> {
                 children: [
                   HugeIcon(
                     icon: HugeIcons.strokeRoundedInformationSquare,
-                    color: setting.theme.value.colors.subTitle.getColor(),
+                    color: Theme.of(context).iconTheme.color ?? Colors.black87,
                     size: 13,
                   ),
                   Text('选项 3'),
@@ -99,15 +98,15 @@ class _DataListState extends State<DataList> {
           color: Colors.transparent,
         ),
         itemDecorationWhileDragging: BoxDecoration(
-          color: setting.theme.value.colors.background.getColor(),
+          color: Theme.of(context).scaffoldBackgroundColor,
           border: Border.all(
-            color: setting.theme.value.colors.separator.getColor(),
+            color: Theme.of(context).dividerColor,
             width: 1,
           ),
           borderRadius: const BorderRadius.all(Radius.circular(8.0)),
         ),
         listInnerDecoration: BoxDecoration(
-          color: setting.theme.value.colors.background.getColor(),
+          color: Theme.of(context).scaffoldBackgroundColor,
           borderRadius: const BorderRadius.all(Radius.circular(8.0)),
         ),
         lastItemTargetHeight: 0,
@@ -119,7 +118,7 @@ class _DataListState extends State<DataList> {
             child: HugeIcon(
               icon: HugeIcons.strokeRoundedMenu01,
               size: 13,
-              color: setting.theme.value.colors.subTitle.getColor(),
+              color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
             ),
           ),
         ),

@@ -2,8 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-import '../shared/shared.dart';
-
 class Theme {
   // 颜色序列
   final ThemeColor colors;
@@ -313,8 +311,8 @@ class MultistateColor {
   final Gradient darkGradient;
 
   // 根据运行时中的配置，返回不同的颜色
-  Color getColor() {
-    if (setting.darkMode.value) {
+  Color getColor({isDarkMode = false}) {
+    if (isDarkMode) {
       return dark;
     } else {
       return light;
@@ -322,16 +320,16 @@ class MultistateColor {
   }
 
   // 获取反向颜色
-  Color getReverseColor() {
-    if (setting.darkMode.value) {
+  Color getReverseColor({isDarkMode = false}) {
+    if (isDarkMode) {
       return light;
     } else {
       return dark;
     }
   }
 
-  getGradient() {
-    if (setting.darkMode.value) {
+  getGradient({isDarkMode = false}) {
+    if (isDarkMode) {
       return darkGradient;
     } else {
       return lightGradient;

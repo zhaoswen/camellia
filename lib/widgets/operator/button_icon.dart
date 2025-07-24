@@ -1,4 +1,4 @@
-import 'package:camellia/shared/shared.dart';
+
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -60,11 +60,9 @@ class _ButtonIconState extends State<ButtonIcon> {
               icon: HugeIcon(
                 icon: widget.iconData,
                 size: widget.iconSize,
-                color: widget.disabled
-                    ? setting.theme.value.colors.disabled.getColor()
-                    : widget.isSelected
-                    ? setting.theme.value.colors.primary.getColor()
-                    : setting.theme.value.colors.standardIcon.getColor(),
+                color: widget.isSelected
+                    ? Theme.of(context).primaryColor
+                    : Theme.of(context).iconTheme.color ?? Colors.black54,
               ),
               style: ButtonStyle(
                 shape: WidgetStateProperty.all<RoundedRectangleBorder>(

@@ -1,4 +1,4 @@
-import 'package:camellia/shared/shared.dart';
+
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -24,15 +24,15 @@ void showContextMenu(
             HugeIcon(
               icon: item.icon,
               size: 13,
-              color: setting.theme.value.colors.title.getColor(),
+              color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
             ),
             SizedBox(width: 10),
             Text(
               item.title,
               style: TextStyle(
                 fontSize: 13,
-                fontFamily: setting.theme.value.fonts.family,
-                color: setting.theme.value.colors.title.getColor(),
+                
+                color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
               ),
             ),
           ],
@@ -42,14 +42,14 @@ void showContextMenu(
   }
   showMenu(
     context: context,
-    color: setting.theme.value.colors.background.getColor(),
+    color: Theme.of(context).scaffoldBackgroundColor,
     popUpAnimationStyle: AnimationStyle.noAnimation,
     // surfaceTintColor: Colors.transparent,
     shadowColor: Colors.transparent,
     menuPadding: EdgeInsets.all(5),
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.all(Radius.circular(6)),
-      side: BorderSide(color: setting.theme.value.colors.separator.getColor()),
+      side: BorderSide(color: Theme.of(context).dividerColor),
     ),
     position: RelativeRect.fromLTRB(
       position.dx,

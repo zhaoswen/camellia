@@ -1,5 +1,4 @@
-import 'package:camellia/shared/shared.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class Logger extends StatefulWidget {
   const Logger({super.key});
@@ -41,9 +40,9 @@ class _LoggerState extends State<Logger> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         border: Border.all(
-          color: setting.theme.value.colors.subTitle.getColor().withAlpha(100),
+          color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54.withAlpha(100),
         ),
-        color: setting.theme.value.colors.parentBackground.getColor(),
+        color: Theme.of(context).cardTheme.color,
       ),
       child: SingleChildScrollView(
         child: Column(
@@ -54,36 +53,34 @@ class _LoggerState extends State<Logger> {
             Text(
               "[INFO] 2025-03-15 12:00:00 默认日志内容",
               style: TextStyle(
-                color: setting.theme.value.colors.primary.getColor(),
+                color: Theme.of(context).primaryColor,
                 fontSize: 12,
-                fontFamily: setting.theme.value.fonts.family,
+                
                 fontWeight: FontWeight.normal,
               ),
             ),
             Text(
               "[WARN] 2025-03-15 12:00:00 警告日志内容",
               style: TextStyle(
-                color: setting.theme.value.colors.warning.getColor(),
+                color: Theme.of(context).colorScheme.primaryContainer,
                 fontSize: 12,
-                fontFamily: setting.theme.value.fonts.family,
                 fontWeight: FontWeight.normal,
               ),
             ),
             Text(
               "[SUCCESS] 2025-03-15 12:00:00 成功日志内容",
               style: TextStyle(
-                color: setting.theme.value.colors.success.getColor(),
+                color: Theme.of(context).colorScheme.secondary,
                 fontSize: 12,
-                fontFamily: setting.theme.value.fonts.family,
+                
                 fontWeight: FontWeight.normal,
               ),
             ),
             Text(
               "[FAIL] 2025-03-15 12:00:00 错误日志内容",
               style: TextStyle(
-                color: setting.theme.value.colors.danger.getColor(),
+                color: Theme.of(context).colorScheme.error,
                 fontSize: 12,
-                fontFamily: setting.theme.value.fonts.family,
                 fontWeight: FontWeight.normal,
               ),
             ),

@@ -1,4 +1,3 @@
-import 'package:camellia/shared/shared.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -64,10 +63,10 @@ class _ButtonMenuState extends State<ButtonMenu> {
           elevation: 4.0,
           child: Container(
             decoration: BoxDecoration(
-              color: setting.theme.value.colors.background.getColor(),
+              color: Theme.of(context).scaffoldBackgroundColor,
               borderRadius: BorderRadius.circular(8.0),
               border: Border.all(
-                color: setting.theme.value.colors.separator.getColor(),
+                color: Theme.of(context).dividerColor,
                 width: 1,
               ),
             ),
@@ -99,8 +98,7 @@ class _ButtonMenuState extends State<ButtonMenu> {
             width: 27,
             child: IconButton(
               splashRadius: 20,
-              hoverColor: setting.theme.value.colors.parentBackground
-                  .getColor(),
+              hoverColor: Theme.of(context).cardTheme.color,
               style: ButtonStyle(
                 shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                   RoundedRectangleBorder(
@@ -120,7 +118,7 @@ class _ButtonMenuState extends State<ButtonMenu> {
               icon: HugeIcon(
                 icon: widget.iconData!,
                 size: 13,
-                color: setting.theme.value.colors.standardIcon.getColor(),
+                color: Theme.of(context).iconTheme.color ?? Colors.black54,
               ),
             ),
           )
@@ -143,8 +141,10 @@ class _ButtonMenuState extends State<ButtonMenu> {
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 13,
-                fontFamily: setting.theme.value.fonts.family,
-                color: setting.theme.value.colors.title.getColor(),
+
+                color:
+                    Theme.of(context).textTheme.titleMedium?.color ??
+                    Colors.black,
                 decoration: TextDecoration.none,
               ),
             ),
@@ -162,14 +162,17 @@ class _ButtonMenuState extends State<ButtonMenu> {
                 ? HugeIcons.strokeRoundedMenu02
                 : item.iconData!,
             size: 13,
-            color: setting.theme.value.colors.subTitle.getColor(),
+            color:
+                Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
           ),
           title: Text(
             item.title,
             style: TextStyle(
               fontSize: 13,
-              fontFamily: setting.theme.value.fonts.family,
-              color: setting.theme.value.colors.subTitle.getColor(),
+
+              color:
+                  Theme.of(context).textTheme.titleSmall?.color ??
+                  Colors.black54,
             ),
           ),
           onTap: () {

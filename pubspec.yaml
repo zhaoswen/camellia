@@ -25,17 +25,12 @@ dependencies:
   # 表单校验框架
   form_builder_validators: ^11.2.0
 
-  # getx框架
-  get: ^4.7.2
-
   # 图标
   hugeicons: ^0.0.11
 
   # 日志
   logger: ^2.6.1
 
-  # 打开网页
-  url_launcher: ^6.3.2
   # uuid 生产
   uuid: ^4.5.1
 dev_dependencies:
