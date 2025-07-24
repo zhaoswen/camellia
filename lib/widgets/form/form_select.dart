@@ -1,4 +1,3 @@
-
 import 'package:camellia/widgets/display/text_title.dart';
 import 'package:dropdown_flutter/custom_dropdown.dart';
 import 'package:flutter/material.dart';
@@ -89,67 +88,85 @@ class _FormSelectState extends State<FormSelect> {
                 disabledDecoration: CustomDropdownDisabledDecoration(
                   headerStyle: TextStyle(
                     fontSize: 12,
-                    
+
                     fontWeight: FontWeight.w400,
-                    color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
+                    color:
+                        Theme.of(context).textTheme.titleSmall?.color ??
+                        Colors.black54,
                   ),
                   fillColor: Theme.of(context).scaffoldBackgroundColor,
                   hintStyle: TextStyle(
                     fontSize: 12,
-                    
+
                     fontWeight: FontWeight.w400,
-                    color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
+                    color:
+                        Theme.of(context).textTheme.titleSmall?.color ??
+                        Colors.black54,
                   ),
                   suffixIcon: HugeIcon(
                     size: 13,
                     icon: HugeIcons.strokeRoundedArrowDown01,
-                    color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
+                    color:
+                        Theme.of(context).textTheme.titleSmall?.color ??
+                        Colors.black54,
                   ),
                 ),
                 decoration: CustomDropdownDecoration(
                   headerStyle: TextStyle(
                     fontSize: 12,
-                    
+
                     fontWeight: FontWeight.w400,
-                    color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
+                    color:
+                        Theme.of(context).textTheme.titleSmall?.color ??
+                        Colors.black54,
                   ),
                   hintStyle: TextStyle(
                     fontSize: 12,
-                    
+
                     fontWeight: FontWeight.w400,
-                    color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
+                    color:
+                        Theme.of(context).textTheme.titleSmall?.color ??
+                        Colors.black54,
                   ),
                   listItemStyle: TextStyle(
                     fontSize: 12,
-                    
+
                     fontWeight: FontWeight.w400,
-                    color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
+                    color:
+                        Theme.of(context).textTheme.titleSmall?.color ??
+                        Colors.black54,
                   ),
                   closedBorderRadius: BorderRadius.circular(5),
-                  expandedFillColor: Theme.of(context).dividerColor
-                      ,
+                  expandedFillColor: Theme.of(context).dividerColor,
                   expandedBorderRadius: BorderRadius.circular(5),
-                  closedFillColor: Theme.of(context).scaffoldBackgroundColor
-                      ,
+                  closedFillColor: Theme.of(context).scaffoldBackgroundColor,
                   closedBorder: Border.all(
-                    color: Theme.of(context).inputDecorationTheme.border?.borderSide.color ?? Colors.black54,
+                    color:
+                        Theme.of(
+                          context,
+                        ).inputDecorationTheme.border?.borderSide.color ??
+                        Colors.black54,
                     width: 1,
                   ),
                   expandedBorder: Border.all(
-                    color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
-                        
-                        .withAlpha(50),
+                    color:
+                        Theme.of(context).textTheme.titleSmall?.color ??
+                        Colors.black54.withAlpha(50),
                     width: 1,
                   ),
                   closedSuffixIcon: HugeIcon(
                     size: 13,
                     icon: HugeIcons.strokeRoundedArrowDown01,
-                    color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
+                    color:
+                        Theme.of(context).textTheme.titleSmall?.color ??
+                        Colors.black54,
                   ),
                   expandedSuffixIcon: HugeIcon(
                     size: 13,
                     icon: HugeIcons.strokeRoundedArrowUp01,
-                    color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
+                    color:
+                        Theme.of(context).textTheme.titleSmall?.color ??
+                        Colors.black54,
                   ),
                 ),
                 items: _options,

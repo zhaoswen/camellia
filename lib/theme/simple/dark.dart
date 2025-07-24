@@ -4,18 +4,19 @@ final ThemeData simpleTheme = ThemeData(
   brightness: Brightness.dark,
   scaffoldBackgroundColor: Colors.black,
   primaryColor: const Color.fromARGB(255, 18, 115, 250),
-  colorScheme: ColorScheme.fromSeed(
-    seedColor: const Color.fromARGB(255, 18, 115, 250),
-    // 危险/错误色（通常为红色系）
-    error: Colors.redAccent,
-  ).copyWith(
-    // 警告色（通常为黄色系）
-    secondary: Colors.amberAccent,
-    // 成功色（通常为绿色系）
-    primaryContainer: Colors.greenAccent,
-    // 禁用
-    tertiary: Colors.grey,
-  ),
+  colorScheme:
+      ColorScheme.fromSeed(
+        seedColor: const Color.fromARGB(255, 18, 115, 250),
+        // 危险/错误色（通常为红色系）
+        error: Colors.redAccent,
+      ).copyWith(
+        // 警告色（通常为黄色系）
+        secondary: Colors.amberAccent,
+        // 成功色（通常为绿色系）
+        primaryContainer: Colors.greenAccent,
+        // 禁用
+        tertiary: Colors.grey,
+      ),
   cardTheme: CardThemeData(color: Colors.black54),
   textTheme: const TextTheme(
     bodyLarge: TextStyle(fontSize: 13),
@@ -25,10 +26,16 @@ final ThemeData simpleTheme = ThemeData(
     titleLarge: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
     // title
     titleMedium: TextStyle(
-        fontSize: 15, fontWeight: FontWeight.w500, color: Colors.black87),
+      fontSize: 15,
+      fontWeight: FontWeight.w500,
+      color: Colors.black87,
+    ),
     // subtitle
     titleSmall: TextStyle(
-        fontSize: 14, fontWeight: FontWeight.w400, color: Colors.black87),
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      color: Colors.black87,
+    ),
     headlineLarge: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
     headlineMedium: TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
     headlineSmall: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
@@ -78,9 +85,7 @@ final ThemeData simpleTheme = ThemeData(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
     ),
   ),
-  iconTheme: const IconThemeData(
-    color: Color(0xff333333),
-  ),
+  iconTheme: const IconThemeData(color: Color(0xff333333)),
   // 提示框默认样式
   useSystemColors: true,
   dividerTheme: const DividerThemeData(

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class ButtonText extends StatefulWidget {
@@ -48,12 +47,7 @@ class _ButtonTextState extends State<ButtonText> {
           overlayColor: WidgetStateProperty.all(
             Theme.of(context).cardTheme.color,
           ),
-          textStyle: WidgetStateProperty.all(
-            TextStyle(
-              
-              fontSize: 13,
-            ),
-          ),
+          textStyle: WidgetStateProperty.all(TextStyle(fontSize: 13)),
         ),
         child: Text(widget.text),
       ),

@@ -1,4 +1,3 @@
-
 import 'package:camellia/widgets/display/text_title.dart';
 import 'package:flutter/material.dart' hide Title;
 import 'package:flutter_form_builder/flutter_form_builder.dart';
@@ -84,22 +83,13 @@ class _FormInputState extends State<FormInput> {
           minLines: widget.minLines,
           readOnly: widget.readOnly,
 
-          style: TextStyle(
-            fontSize: 13,
-
-          ),
+          style: TextStyle(fontSize: 13),
           cursorColor: Theme.of(context).primaryColor,
           cursorHeight: 15,
           cursorRadius: Radius.circular(10),
           decoration: InputDecoration(
-            labelStyle: TextStyle(
-              color: Theme.of(context).iconTheme.color,
-              
-            ),
-            hintStyle: TextStyle(
-              color: Theme.of(context).iconTheme.color,
-              
-            ),
+            labelStyle: TextStyle(color: Theme.of(context).iconTheme.color),
+            hintStyle: TextStyle(color: Theme.of(context).iconTheme.color),
             isDense: true,
             errorMaxLines: 1,
             filled: true,
@@ -129,7 +119,10 @@ class _FormInputState extends State<FormInput> {
               borderSide: BorderSide(
                 color: (widget.isWarning ?? false)
                     ? Theme.of(context).colorScheme.error
-                    : Theme.of(context).inputDecorationTheme.border?.borderSide.color ?? Colors.black54,
+                    : Theme.of(
+                            context,
+                          ).inputDecorationTheme.border?.borderSide.color ??
+                          Colors.black54,
                 width: 1,
               ),
             ),

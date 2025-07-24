@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 import '../display/message.dart';
@@ -82,8 +81,7 @@ class _ButtonOperateState extends State<ButtonOperate> {
               hoverColor: widget.isDanger
                   ? Theme.of(context).colorScheme.error.withAlpha(20)
                   : Theme.of(context).cardTheme.color,
-              focusColor: Theme.of(context).cardTheme.color
-                  ,
+              focusColor: Theme.of(context).cardTheme.color,
               icon: HugeIcon(
                 icon: widget.iconData,
                 size: widget.iconSize,

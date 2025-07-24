@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class TextTitle extends StatelessWidget {
   const TextTitle({
     super.key,
@@ -39,7 +37,6 @@ class TextTitle extends StatelessWidget {
       child: Text(
         title,
         style: TextStyle(
-          
           fontSize: fontSize,
           fontWeight: fontWeight,
           color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,

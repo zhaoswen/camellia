@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 // 弹出对话框
@@ -55,8 +54,11 @@ void showDialogAlert({
                         child: Text(
                           title,
                           style: TextStyle(
-                            
-                            color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
+                            color:
+                                Theme.of(
+                                  context,
+                                ).textTheme.titleMedium?.color ??
+                                Colors.black,
                             // fontWeight: FontWeight.bold,
                             fontSize: 15,
                           ),
@@ -72,8 +74,9 @@ void showDialogAlert({
                     child: Text(
                       content,
                       style: TextStyle(
-                        
-                        color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
+                        color:
+                            Theme.of(context).textTheme.titleSmall?.color ??
+                            Colors.black54,
                         fontSize: 13,
                       ),
                     ),
@@ -97,9 +100,11 @@ void showDialogAlert({
                           child: Text(
                             confirm,
                             style: TextStyle(
-                              
-                              color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
-                                  ,
+                              color:
+                                  Theme.of(
+                                    context,
+                                  ).textTheme.titleSmall?.color ??
+                                  Colors.black54,
                               fontSize: 13,
                             ),
                           ),
@@ -113,9 +118,11 @@ void showDialogAlert({
                           child: Text(
                             cancel,
                             style: TextStyle(
-                              
-                              color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
-                                  ,
+                              color:
+                                  Theme.of(
+                                    context,
+                                  ).textTheme.titleSmall?.color ??
+                                  Colors.black54,
                               fontSize: 13,
                             ),
                           ),

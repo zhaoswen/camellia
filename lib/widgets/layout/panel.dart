@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class Panel extends StatefulWidget {
@@ -42,22 +41,13 @@ class _PanelState extends State<Panel> {
         color: Theme.of(context).scaffoldBackgroundColor,
         border: Border(
           right: widget.border == "right"
-              ? BorderSide(
-                  color: Theme.of(context).dividerColor,
-                  width: 1,
-                )
+              ? BorderSide(color: Theme.of(context).dividerColor, width: 1)
               : BorderSide.none,
           left: widget.border == "left"
-              ? BorderSide(
-                  color: Theme.of(context).dividerColor,
-                  width: 1,
-                )
+              ? BorderSide(color: Theme.of(context).dividerColor, width: 1)
               : BorderSide.none,
           top: widget.border == "top"
-              ? BorderSide(
-                  color: Theme.of(context).dividerColor,
-                  width: 1,
-                )
+              ? BorderSide(color: Theme.of(context).dividerColor, width: 1)
               : BorderSide.none,
         ),
       ),
@@ -85,8 +75,10 @@ class _PanelState extends State<Panel> {
                   widget.name,
                   style: TextStyle(
                     fontSize: 13,
-                    
-                    color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
+
+                    color:
+                        Theme.of(context).textTheme.titleMedium?.color ??
+                        Colors.black,
                     fontWeight: FontWeight.w400,
                     decoration: TextDecoration.none,
                   ),

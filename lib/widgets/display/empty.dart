@@ -34,9 +34,9 @@ class Empty extends StatelessWidget {
               HugeIcon(
                 icon: icon,
                 size: 40,
-                color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54.withAlpha(
-                  50,
-                ),
+                color:
+                    Theme.of(context).textTheme.titleSmall?.color ??
+                    Colors.black54.withAlpha(50),
               )
             else if (child != null)
               child!,
@@ -44,10 +44,10 @@ class Empty extends StatelessWidget {
               Text(
                 text,
                 style: TextStyle(
-                  color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
-                      
-                      .withAlpha(200),
-                  
+                  color:
+                      Theme.of(context).textTheme.titleSmall?.color ??
+                      Colors.black54.withAlpha(200),
+
                   fontWeight: FontWeight.normal,
                   fontSize: size,
                 ),

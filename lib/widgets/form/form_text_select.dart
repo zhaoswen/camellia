@@ -1,4 +1,3 @@
-
 import 'package:camellia/widgets/display/text_title.dart';
 import 'package:camellia/widgets/operator/search.dart';
 import 'package:camellia/widgets/layout/view_tab.dart';
@@ -66,9 +65,9 @@ class _FormTextSelectState extends State<FormTextSelect> {
                   readOnly: true,
                   style: TextStyle(
                     fontSize: 13,
+
                     // color: setting.theme.value.colors.inputText,
                     // color: Theme.of(context).inputDecorationTheme.,
-
                   ),
                   cursorColor: Theme.of(context).primaryColor,
                   cursorHeight: 15,
@@ -78,17 +77,14 @@ class _FormTextSelectState extends State<FormTextSelect> {
                   decoration: InputDecoration(
                     labelStyle: TextStyle(
                       color: Theme.of(context).iconTheme.color,
-                      
                     ),
                     hintStyle: TextStyle(
                       color: Theme.of(context).iconTheme.color,
-                      
                     ),
                     isDense: true,
                     errorMaxLines: 1,
                     filled: true,
-                    fillColor: Theme.of(context).scaffoldBackgroundColor
-                        ,
+                    fillColor: Theme.of(context).scaffoldBackgroundColor,
                     contentPadding: const EdgeInsets.symmetric(
                       vertical: 8,
                       horizontal: 12,
@@ -105,8 +101,11 @@ class _FormTextSelectState extends State<FormTextSelect> {
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5),
                       borderSide: BorderSide(
-                        color: Theme.of(context).inputDecorationTheme.border?.borderSide.color ?? Colors.black54
-                            ,
+                        color:
+                            Theme.of(
+                              context,
+                            ).inputDecorationTheme.border?.borderSide.color ??
+                            Colors.black54,
                         width: 1,
                       ),
                     ),
@@ -180,13 +179,17 @@ class _FormTextSelectState extends State<FormTextSelect> {
             itemBuilder: (context, index) {
               return ListTile(
                 titleTextStyle: TextStyle(
-                  color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
-                  
+                  color:
+                      Theme.of(context).textTheme.titleMedium?.color ??
+                      Colors.black,
+
                   fontSize: 13,
                 ),
                 subtitleTextStyle: TextStyle(
-                  color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
-                  
+                  color:
+                      Theme.of(context).textTheme.titleSmall?.color ??
+                      Colors.black54,
+
                   fontSize: 11,
                 ),
                 shape: RoundedRectangleBorder(

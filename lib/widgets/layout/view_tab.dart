@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 // 定义标签页数据
@@ -61,8 +60,9 @@ class _ViewTabState extends State<ViewTab> {
                   // 分割线颜色
                   dividerColor: Theme.of(context).dividerColor,
                   // 未选中标签文本
-                  unselectedLabelColor: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
-                      ,
+                  unselectedLabelColor:
+                      Theme.of(context).textTheme.titleSmall?.color ??
+                      Colors.black54,
                   overlayColor: WidgetStateProperty.all(Colors.transparent),
                   // 选中标签文本
                   labelColor: Theme.of(context).primaryColor,
@@ -76,14 +76,8 @@ class _ViewTabState extends State<ViewTab> {
                   // 标签页列表
                   tabs: widget.tabs
                       .map(
-                        (tab) => Tab(
-                          child: Text(
-                            tab.title,
-                            style: TextStyle(
-                              
-                            ),
-                          ),
-                        ),
+                        (tab) =>
+                            Tab(child: Text(tab.title, style: TextStyle())),
                       )
                       .toList(),
                 ),

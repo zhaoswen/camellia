@@ -1,4 +1,3 @@
-
 import 'package:camellia/widgets/display/empty.dart';
 import 'package:camellia/widgets/display/text_title.dart';
 import 'package:camellia/widgets/operator/button_icon.dart';
@@ -80,10 +79,7 @@ class _FormListState extends State<FormList> {
         Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
-            border: Border.all(
-              width: 1,
-              color: Theme.of(context).dividerColor,
-            ),
+            border: Border.all(width: 1, color: Theme.of(context).dividerColor),
           ),
           height: widget.height,
           child: Column(
@@ -98,8 +94,11 @@ class _FormListState extends State<FormList> {
                             leading: HugeIcon(
                               icon: _items[index].icon,
                               size: 16,
-                              color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black
-                                  ,
+                              color:
+                                  Theme.of(
+                                    context,
+                                  ).textTheme.titleMedium?.color ??
+                                  Colors.black,
                             ),
                             title: Tooltip(
                               message: _items[index].key,
@@ -108,9 +107,12 @@ class _FormListState extends State<FormList> {
                                 style: TextStyle(
                                   overflow: TextOverflow.ellipsis,
                                   fontSize: 13,
-                                  
-                                  color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black
-                                      ,
+
+                                  color:
+                                      Theme.of(
+                                        context,
+                                      ).textTheme.titleMedium?.color ??
+                                      Colors.black,
                                 ),
                               ),
                             ),

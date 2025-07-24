@@ -6,8 +6,11 @@ class DemoView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextLink(onPressed: (){
-      // TODO: implement build
-    }, text: "Click me");
+    return TextLink(
+      onPressed: () {
+        // TODO: implement build
+      },
+      text: "Click me",
+    );
   }
 }

@@ -34,7 +34,7 @@ class _SearchState extends State<Search> {
       ),
       style: TextStyle(
         fontSize: 13,
-        
+
         color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
       ),
       cursorHeight: 12,
@@ -42,9 +42,7 @@ class _SearchState extends State<Search> {
       cursorRadius: Radius.circular(5),
       decoration: BoxDecoration(
         color: Theme.of(context).scaffoldBackgroundColor,
-        border: Border.all(
-          color: Theme.of(context).dividerColor,
-        ),
+        border: Border.all(color: Theme.of(context).dividerColor),
         borderRadius: BorderRadius.circular(5.0),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 0.0),

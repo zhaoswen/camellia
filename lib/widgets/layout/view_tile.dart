@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class ViewTile extends StatefulWidget {
@@ -42,14 +41,18 @@ class _ViewTileState extends State<ViewTile> {
                   Icon(
                     item.icon,
                     size: 25,
-                    color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
+                    color:
+                        Theme.of(context).textTheme.titleMedium?.color ??
+                        Colors.black,
                   ),
                 Text(
                   item.title,
                   style: TextStyle(
                     fontSize: 12,
-                    
-                    color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
+
+                    color:
+                        Theme.of(context).textTheme.titleSmall?.color ??
+                        Colors.black54,
                     // 截断
                     overflow: TextOverflow.ellipsis,
                   ),

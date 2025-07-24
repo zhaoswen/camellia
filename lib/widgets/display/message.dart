@@ -1,6 +1,5 @@
 import 'dart:developer';
 
-
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -66,11 +65,11 @@ class MessageOverlay {
                 //       decoration: BoxDecoration(
                 //         borderRadius: BorderRadius.circular(13.0),
                 //         // color: Theme.of(context).scaffoldBackgroundColor
-                //         //     
+                //         //
                 //         //     .withAlpha(250),
                 //         border: Border.all(
                 //           color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
-                //               
+                //
                 //               .withAlpha(100),
                 //           width: 0.5,
                 //         ),
@@ -86,14 +85,16 @@ class MessageOverlay {
                       color: Theme.of(context).scaffoldBackgroundColor,
                       borderRadius: BorderRadius.circular(13.0),
                       border: Border.all(
-                        color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
-                            .withAlpha(100),
+                        color:
+                            Theme.of(context).textTheme.titleSmall?.color ??
+                            Colors.black54.withAlpha(100),
                         width: 0.5,
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
-                              .withAlpha(50),
+                          color:
+                              Theme.of(context).textTheme.titleSmall?.color ??
+                              Colors.black54.withAlpha(50),
                           blurRadius: 5.0,
                           offset: Offset(1, 1),
                         ),
@@ -116,7 +117,7 @@ class MessageOverlay {
                                 fontSize: 13.0,
                                 color: getMainColor(type, context),
                                 decoration: TextDecoration.none,
-                                
+
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -133,8 +134,7 @@ class MessageOverlay {
                                 icon: HugeIcon(
                                   icon: HugeIcons.strokeRoundedClean,
                                   size: 13,
-                                  color: Theme.of(context).primaryColor
-                                      ,
+                                  color: Theme.of(context).primaryColor,
                                 ),
                               ),
                             ),
@@ -144,9 +144,13 @@ class MessageOverlay {
                           message,
                           style: TextStyle(
                             fontSize: 12.0,
-                            color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
+                            color:
+                                Theme.of(
+                                  context,
+                                ).textTheme.titleMedium?.color ??
+                                Colors.black,
                             decoration: TextDecoration.none,
-                            
+
                             fontWeight: FontWeight.normal,
                           ),
                         ),

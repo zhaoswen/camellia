@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -24,15 +23,19 @@ void showContextMenu(
             HugeIcon(
               icon: item.icon,
               size: 13,
-              color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
+              color:
+                  Theme.of(context).textTheme.titleMedium?.color ??
+                  Colors.black,
             ),
             SizedBox(width: 10),
             Text(
               item.title,
               style: TextStyle(
                 fontSize: 13,
-                
-                color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
+
+                color:
+                    Theme.of(context).textTheme.titleMedium?.color ??
+                    Colors.black,
               ),
             ),
           ],

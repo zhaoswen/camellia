@@ -1,7 +1,5 @@
-
 import 'package:camellia/widgets/display/empty.dart';
 import 'package:flutter/material.dart';
-
 
 // 弹出对话框
 void showDialogBasic({
@@ -65,8 +63,7 @@ void showDialogBasic({
                       border: Border(
                         bottom: BorderSide(
                           width: 1,
-                          color: Theme.of(context).dividerColor
-                              ,
+                          color: Theme.of(context).dividerColor,
                         ),
                       ),
                     ),
@@ -79,9 +76,11 @@ void showDialogBasic({
                           child: Text(
                             title,
                             style: TextStyle(
-                              
-                              color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black
-                                  ,
+                              color:
+                                  Theme.of(
+                                    context,
+                                  ).textTheme.titleMedium?.color ??
+                                  Colors.black,
                               // fontWeight: FontWeight.bold,
                               fontSize: 15,
                             ),
@@ -110,8 +109,7 @@ void showDialogBasic({
                               Theme.of(context).scaffoldBackgroundColor,
                             ),
                             overlayColor: WidgetStateProperty.all(
-                              Theme.of(context).cardTheme.color
-                                  ,
+                              Theme.of(context).cardTheme.color,
                             ),
                             shape: WidgetStateProperty.all(
                               RoundedRectangleBorder(
@@ -126,9 +124,11 @@ void showDialogBasic({
                           child: Text(
                             confirm,
                             style: TextStyle(
-                              
-                              color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
-                                  ,
+                              color:
+                                  Theme.of(
+                                    context,
+                                  ).textTheme.titleSmall?.color ??
+                                  Colors.black54,
                               fontSize: 13,
                             ),
                           ),
@@ -144,8 +144,7 @@ void showDialogBasic({
                               Theme.of(context).scaffoldBackgroundColor,
                             ),
                             overlayColor: WidgetStateProperty.all(
-                              Theme.of(context).cardTheme.color
-                                  ,
+                              Theme.of(context).cardTheme.color,
                             ),
                             shape: WidgetStateProperty.all(
                               RoundedRectangleBorder(
@@ -156,9 +155,11 @@ void showDialogBasic({
                           child: Text(
                             cancel,
                             style: TextStyle(
-                              
-                              color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54
-                                  ,
+                              color:
+                                  Theme.of(
+                                    context,
+                                  ).textTheme.titleSmall?.color ??
+                                  Colors.black54,
                               fontSize: 13,
                             ),
                           ),

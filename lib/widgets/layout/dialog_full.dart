@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 // 全屏对话框（独占）
@@ -32,8 +31,7 @@ Future<void> showDialogFull(
                       decoration: BoxDecoration(
                         border: Border(
                           bottom: BorderSide(
-                            color: Theme.of(context).dividerColor
-                                ,
+                            color: Theme.of(context).dividerColor,
                             width: 1,
                           ),
                         ),
@@ -44,9 +42,12 @@ Future<void> showDialogFull(
                           Text(
                             title,
                             style: TextStyle(
-                              color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black
-                                  ,
-                              
+                              color:
+                                  Theme.of(
+                                    context,
+                                  ).textTheme.titleMedium?.color ??
+                                  Colors.black,
+
                               fontSize: 14,
                             ),
                           ),
@@ -61,8 +62,7 @@ Future<void> showDialogFull(
                       decoration: BoxDecoration(
                         border: Border(
                           top: BorderSide(
-                            color: Theme.of(context).dividerColor
-                                ,
+                            color: Theme.of(context).dividerColor,
                             width: 1,
                           ),
                         ),

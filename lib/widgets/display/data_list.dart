@@ -48,7 +48,9 @@ class _DataListState extends State<DataList> {
                 children: [
                   HugeIcon(
                     icon: HugeIcons.strokeRoundedInformationSquare,
-                    color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
+                    color:
+                        Theme.of(context).textTheme.titleSmall?.color ??
+                        Colors.black54,
                     size: 13,
                   ),
                   Text('选项 2'),
@@ -99,10 +101,7 @@ class _DataListState extends State<DataList> {
         ),
         itemDecorationWhileDragging: BoxDecoration(
           color: Theme.of(context).scaffoldBackgroundColor,
-          border: Border.all(
-            color: Theme.of(context).dividerColor,
-            width: 1,
-          ),
+          border: Border.all(color: Theme.of(context).dividerColor, width: 1),
           borderRadius: const BorderRadius.all(Radius.circular(8.0)),
         ),
         listInnerDecoration: BoxDecoration(
@@ -118,7 +117,9 @@ class _DataListState extends State<DataList> {
             child: HugeIcon(
               icon: HugeIcons.strokeRoundedMenu01,
               size: 13,
-              color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54,
+              color:
+                  Theme.of(context).textTheme.titleSmall?.color ??
+                  Colors.black54,
             ),
           ),
         ),

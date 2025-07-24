@@ -40,7 +40,9 @@ class _LoggerState extends State<Logger> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         border: Border.all(
-          color: Theme.of(context).textTheme.titleSmall?.color ?? Colors.black54.withAlpha(100),
+          color:
+              Theme.of(context).textTheme.titleSmall?.color ??
+              Colors.black54.withAlpha(100),
         ),
         color: Theme.of(context).cardTheme.color,
       ),
@@ -55,7 +57,7 @@ class _LoggerState extends State<Logger> {
               style: TextStyle(
                 color: Theme.of(context).primaryColor,
                 fontSize: 12,
-                
+
                 fontWeight: FontWeight.normal,
               ),
             ),
@@ -72,7 +74,7 @@ class _LoggerState extends State<Logger> {
               style: TextStyle(
                 color: Theme.of(context).colorScheme.secondary,
                 fontSize: 12,
-                
+
                 fontWeight: FontWeight.normal,
               ),
             ),

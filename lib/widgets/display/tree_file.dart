@@ -1,6 +1,5 @@
 import 'dart:io';
 
-
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -66,7 +65,9 @@ class TreeFileState extends State<TreeFile> {
           title: Text(
             name,
             style: TextStyle(
-              color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
+              color:
+                  Theme.of(context).textTheme.titleMedium?.color ??
+                  Colors.black,
               fontSize: 13,
             ),
           ),
@@ -74,7 +75,8 @@ class TreeFileState extends State<TreeFile> {
             icon: isDirectory
                 ? HugeIcons.strokeRoundedFolder02
                 : HugeIcons.strokeRoundedFile01,
-            color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
+            color:
+                Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
             size: 13,
           ),
           trailing: isDirectory
@@ -83,7 +85,9 @@ class TreeFileState extends State<TreeFile> {
                     icon: _expanded[entity.path] ?? false
                         ? HugeIcons.strokeRoundedArrowUp01
                         : HugeIcons.strokeRoundedArrowDown01,
-                    color: Theme.of(context).textTheme.titleMedium?.color ?? Colors.black,
+                    color:
+                        Theme.of(context).textTheme.titleMedium?.color ??
+                        Colors.black,
                     size: 13,
                   ),
                   onPressed: () {

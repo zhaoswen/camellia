@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class TextLink extends StatefulWidget {
@@ -37,11 +36,11 @@ class _TextLinkState extends State<TextLink> {
           child: Text(
             widget.text,
             style: TextStyle(
-              
               fontSize: 13,
               color: _isHovered
                   ? Theme.of(context).primaryColor
-                  : Theme.of(context).textTheme.bodyMedium?.color ?? Colors.black87,
+                  : Theme.of(context).textTheme.bodyMedium?.color ??
+                        Colors.black87,
             ),
           ),
         ),
