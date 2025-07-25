@@ -77,6 +77,9 @@ class _BreadcrumbState extends State<Breadcrumb> {
   /// buildRow
   ///
   /// 构建面包屑行，包括文本链接和分隔符
+  /// 
+  /// 此方法会遍历所有面包屑项，为每个项创建TextLink组件，并在项之间添加分隔符图标
+  /// 最后一项不会添加分隔符
   List<Widget> buildRow() {
     List<Widget> list = [];
     for (int i = 0; i < widget.items.length; i++) {
@@ -110,6 +113,8 @@ class _BreadcrumbState extends State<Breadcrumb> {
 /// BreadcrumbItem
 ///
 /// 面包屑子项定义
+/// 
+/// 用于表示面包屑导航中的单个路径项，包含标题、唯一标识符、子项列表和点击回调
 class BreadcrumbItem {
   /// Title of the item, required
   ///
