@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// Line Chart Widget, unactive now
 class ChartLine extends StatefulWidget {
+  /// line chart
   const ChartLine({super.key});
 
   @override

@@ -1,9 +1,9 @@
 // 通用定义
 
-// 方向
+/// Enum Direction, use to define direction
 enum Direction {
-  // 横向
+  /// horizontal enum
   horizontal,
-  // 纵向
+  /// vertical enum
   vertical,
 }

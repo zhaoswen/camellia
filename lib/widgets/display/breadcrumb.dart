@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 // 面包屑组件
+/// Breadcrumb Widget
 class Breadcrumb extends StatefulWidget {
   const Breadcrumb({
     super.key,

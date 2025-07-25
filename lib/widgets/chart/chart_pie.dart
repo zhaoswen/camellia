@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// Pie Chart Widget, unactive now
 class ChartPie extends StatefulWidget {
+  /// pie chart
   const ChartPie({super.key});
 
   @override

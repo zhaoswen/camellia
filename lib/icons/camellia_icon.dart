@@ -1,1 +1,2 @@
+/// Camellia Icons
 class CamelliaIcon {}
