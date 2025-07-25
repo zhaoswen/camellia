@@ -2,8 +2,13 @@ import 'package:camellia/widgets/operator/link_text.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-// 面包屑组件
 /// Breadcrumb Widget
+///
+/// The breadcrumb component is used to display a series of paths, such as: Home/Application Management/Application List
+///
+/// 面包屑组件
+///
+/// 面包屑组件主要用于展示一系列的路径，比如：首页/应用管理/应用列表
 class Breadcrumb extends StatefulWidget {
   const Breadcrumb({
     super.key,
@@ -14,10 +19,14 @@ class Breadcrumb extends StatefulWidget {
     this.head = const SizedBox(),
   });
 
-  // 整体高度
+  /// height
+  ///
+  /// 整体高度
   final double height;
 
-  // 面包列表
+  /// items, all items must be ordered
+  ///
+  /// 面包列表，也就是所有的路径，注意此部分有顺序要求
   final List<BreadcrumbItem> items;
 
   // 自定义中间图标
@@ -87,17 +96,31 @@ class _BreadcrumbState extends State<Breadcrumb> {
   }
 }
 
+/// BreadcrumbItem
+///
+/// 面包屑子项定义
 class BreadcrumbItem {
-  // 标题
+  /// Title of the item, required
+  ///
+  /// 面包屑显示标题，必需属性
   final String title;
 
-  // key
+  /// Key of the item, required
+  ///
+  /// 面包屑key，必需属性
   final String key;
 
+  /// Children of the item, required
+  ///
+  /// 子级，必需属性
   final List<BreadcrumbItem> children;
 
+  /// Callback when item is tapped, required
+  ///
+  /// 点击事件，必需属性
   Function() onTap;
 
+  /// BreadcrumbItem constructor
   BreadcrumbItem({
     required this.title,
     required this.key,
