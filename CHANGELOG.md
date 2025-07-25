@@ -33,3 +33,11 @@
 * Remove extra dependencies
 * Standardize theme usage
 * Preliminary build of dark mode
+
+## 1.0.6
+
+* Add random background component, allowing generation of a blurred background randomly
+* Remove unnecessary dependencies to avoid conflicts with user dependencies
+* Refactor usage of some components
+* Fully adopt Flutter's theme management mechanism, no longer using manual implementation
+* Organize simple themes, including light and dark modes

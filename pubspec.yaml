@@ -1,6 +1,6 @@
 name: camellia
 description: "This is a simple and easy-to-use Flutter component library that can be seamlessly integrated into applications, whether they are mobile or desktop-based."
-version: 1.0.5
+version: 1.0.6
 homepage: https://github.com/zhaoswen/camellia
 
 environment:
@@ -13,26 +13,28 @@ dependencies:
 
   # 下拉框
   dropdown_flutter: ^1.0.1
+
   # 可拖拽列表
   drag_and_drop_lists: ^0.4.2
 
   # 图表
   fl_chart: ^1.0.0
+
   # 开关按钮
   flutter_advanced_switch: ^3.1.0
+
   # 表单框架
   flutter_form_builder: ^10.1.0
+
   # 表单校验框架
   form_builder_validators: ^11.2.0
 
   # 图标
   hugeicons: ^0.0.11
 
-  # 日志
-  logger: ^2.6.1
-
   # uuid 生产
   uuid: ^4.5.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
