@@ -29,13 +29,19 @@ class Breadcrumb extends StatefulWidget {
   /// 面包列表，也就是所有的路径，注意此部分有顺序要求
   final List<BreadcrumbItem> items;
 
-  // 自定义中间图标
+  /// middleIcon
+  ///
+  /// 中间分隔图标，默认使用右箭头图标
   final IconData middleIcon;
 
-  // 尾部按钮（会自动放到最后）
+  /// tail
+  ///
+  /// 尾部按钮（会自动放到最后）
   final Widget tail;
 
-  // 前部组件
+  /// head
+  ///
+  /// 前部组件
   final Widget head;
 
   @override
@@ -45,6 +51,7 @@ class Breadcrumb extends StatefulWidget {
 class _BreadcrumbState extends State<Breadcrumb> {
   @override
   Widget build(BuildContext context) {
+    // 构建主行组件列表
     List<Widget> mainRow = [];
     mainRow.add(widget.head);
     mainRow.add(
@@ -67,6 +74,9 @@ class _BreadcrumbState extends State<Breadcrumb> {
     );
   }
 
+  /// buildRow
+  ///
+  /// 构建面包屑行，包括文本链接和分隔符
   List<Widget> buildRow() {
     List<Widget> list = [];
     for (int i = 0; i < widget.items.length; i++) {
@@ -77,6 +87,7 @@ class _BreadcrumbState extends State<Breadcrumb> {
           text: widget.items[i].title,
         ),
       );
+      // 添加分隔符图标（除了最后一个元素）
       if (i != widget.items.length - 1 && widget.items.length != 1) {
         list.add(
           Container(
@@ -121,6 +132,12 @@ class BreadcrumbItem {
   Function() onTap;
 
   /// BreadcrumbItem constructor
+  ///
+  /// 构造函数，创建一个面包屑项目
+  /// [title] 显示的文本标题
+  /// [key] 唯一标识符
+  /// [children] 子项目列表
+  /// [onTap] 点击回调函数
   BreadcrumbItem({
     required this.title,
     required this.key,
