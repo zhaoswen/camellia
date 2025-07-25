@@ -41,3 +41,8 @@
 * Refactor usage of some components
 * Fully adopt Flutter's theme management mechanism, no longer using manual implementation
 * Organize simple themes, including light and dark modes
+
+## 1.0.7
+
+* Preliminary improvement of component documentation
+* Improvement of some components
