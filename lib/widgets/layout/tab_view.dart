@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 // 定义标签页数据
-class TabItem {
+class XTabItem {
   final String title;
   final Widget content;
 
-  TabItem({required this.title, required this.content});
+  XTabItem({required this.title, required this.content});
 }
 
-class ViewTab extends StatefulWidget {
-  const ViewTab({
+class XTabView extends StatefulWidget {
+  const XTabView({
     super.key,
     required this.tabs,
     this.spacing = 0,
@@ -19,7 +19,7 @@ class ViewTab extends StatefulWidget {
   });
 
   // 标签页数据列表
-  final List<TabItem> tabs;
+  final List<XTabItem> tabs;
 
   // 内容间隔
   final double spacing;
@@ -34,10 +34,10 @@ class ViewTab extends StatefulWidget {
   final int defaultIndex;
 
   @override
-  State<ViewTab> createState() => _ViewTabState();
+  State<XTabView> createState() => _XTabViewState();
 }
 
-class _ViewTabState extends State<ViewTab> {
+class _XTabViewState extends State<XTabView> {
   @override
   Widget build(BuildContext context) {
     return Container(

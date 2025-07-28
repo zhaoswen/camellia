@@ -1,6 +1,6 @@
 import 'package:camellia/widgets/display/text_title.dart';
 import 'package:camellia/widgets/operator/search.dart';
-import 'package:camellia/widgets/layout/view_tab.dart';
+import 'package:camellia/widgets/layout/tab_view.dart';
 import 'package:camellia/widgets/operator/button_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
@@ -151,7 +151,7 @@ class _FormTextSelectState extends State<FormTextSelect> {
                       },
                       content: SizedBox(
                         height: 400,
-                        child: ViewTab(
+                        child: XTabView(
                           tabs: makeTab(widget.options),
                           spacing: 10,
                         ),
@@ -168,11 +168,11 @@ class _FormTextSelectState extends State<FormTextSelect> {
     );
   }
 
-  List<TabItem> makeTab(List<XFormTextSelectClass> options) {
-    List<TabItem> tabs = [];
+  List<XTabItem> makeTab(List<XFormTextSelectClass> options) {
+    List<XTabItem> tabs = [];
     for (XFormTextSelectClass option in options) {
       tabs.add(
-        TabItem(
+        XTabItem(
           title: option.label,
           content: ListView.builder(
             itemCount: option.items.length,

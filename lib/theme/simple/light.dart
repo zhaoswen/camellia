@@ -89,6 +89,7 @@ final ThemeData simpleThemeLight = ThemeData(
   iconTheme: const IconThemeData(color: Color(0xff333333)),
   // 提示框默认样式
   useSystemColors: true,
+  dividerColor: Colors.black12,
   dividerTheme: const DividerThemeData(
     color: Colors.black12,
     thickness: 1,
