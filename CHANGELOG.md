@@ -46,3 +46,4 @@
 
 * Preliminary improvement of component documentation
 * Improvement of some components
+* Rename all components name (Add 'X' to the beginning)
