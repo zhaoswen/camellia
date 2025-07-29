@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 /// Line Chart Widget, unactive now
-class ChartLine extends StatefulWidget {
+class XLineChart extends StatefulWidget {
   /// line chart
-  const ChartLine({super.key});
+  const XLineChart({super.key});
 
   @override
-  State<ChartLine> createState() => _ChartLineState();
+  State<XLineChart> createState() => _XLineChartState();
 }
 
-class _ChartLineState extends State<ChartLine> {
+class _XLineChartState extends State<XLineChart> {
   @override
   Widget build(BuildContext context) {
     return const Placeholder();

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 // 选择器组件（下拉框）
-class FormSelect extends StatefulWidget {
+class XSelect extends StatefulWidget {
   final List<dynamic> options;
   final dynamic value;
   final ValueChanged<dynamic> onChanged;
@@ -18,7 +18,7 @@ class FormSelect extends StatefulWidget {
   // 后缀组件
   final Widget? suffixWidget;
 
-  const FormSelect({
+  const XSelect({
     super.key,
     required this.options,
     this.value,
@@ -33,10 +33,10 @@ class FormSelect extends StatefulWidget {
   });
 
   @override
-  State<FormSelect> createState() => _FormSelectState();
+  State<XSelect> createState() => _XSelectState();
 }
 
-class _FormSelectState extends State<FormSelect> {
+class _XSelectState extends State<XSelect> {
   late List<dynamic> _options; // 添加私有变量来存储 options 的副本
   List<String> selectedValue = [];
 
@@ -57,7 +57,7 @@ class _FormSelectState extends State<FormSelect> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         if (widget.label != "")
-          TextTitle(
+          XTitle(
             title: widget.label,
             fontSize: widget.fontSize,
             fontWeight: widget.fontWeight,

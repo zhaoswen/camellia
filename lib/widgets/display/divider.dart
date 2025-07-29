@@ -15,7 +15,7 @@ import '../../../entity/common.dart';
 /// [color] 分割线颜色，默认为Colors.black12
 ///
 /// 示例：Divider(direction: Direction.horizontal, color: Colors.red)
-class Divider extends StatelessWidget {
+class XDivider extends StatelessWidget {
   /// 分割线方向，默认为水平
   ///
   /// 分割线宽度，默认为1
@@ -23,7 +23,7 @@ class Divider extends StatelessWidget {
   /// 分割线高度，默认为1
   ///
   /// 分割线颜色，默认为Colors.black12
-  const Divider({
+  const XDivider({
     super.key,
     required this.direction,
     this.width = 1,

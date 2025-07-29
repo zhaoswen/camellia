@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ButtonText extends StatefulWidget {
-  const ButtonText({
+class XTextButton extends StatefulWidget {
+  const XTextButton({
     super.key,
     required this.onPressed,
     required this.text,
@@ -21,10 +21,10 @@ class ButtonText extends StatefulWidget {
   final double width;
 
   @override
-  State<ButtonText> createState() => _ButtonTextState();
+  State<XTextButton> createState() => _XTextButtonState();
 }
 
-class _ButtonTextState extends State<ButtonText> {
+class _XTextButtonState extends State<XTextButton> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(

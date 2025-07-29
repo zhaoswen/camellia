@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TextGradient extends StatefulWidget {
-  const TextGradient({
+class XGradientText extends StatefulWidget {
+  const XGradientText({
     super.key,
     // 文本
     this.text = "Camellia UI",
@@ -28,10 +28,10 @@ class TextGradient extends StatefulWidget {
   final List<Color> hoverColors;
 
   @override
-  State<TextGradient> createState() => _TextGradientState();
+  State<XGradientText> createState() => _XGradientTextState();
 }
 
-class _TextGradientState extends State<TextGradient>
+class _XGradientTextState extends State<XGradientText>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;

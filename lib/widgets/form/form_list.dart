@@ -7,7 +7,7 @@ import 'package:hugeicons/hugeicons.dart';
 import 'package:uuid/v4.dart';
 
 /// 表单列表组件，用于展示与修改数组类型的数据
-class FormList extends StatefulWidget {
+class XList extends StatefulWidget {
   final String title;
   final List<XFormListItem> items; // 接收数组数据
   final ValueChanged<List<XFormListItem>> onChanged; // 回调函数，当列表变化时触发
@@ -23,7 +23,7 @@ class FormList extends StatefulWidget {
   // 组件高度
   final double height;
 
-  const FormList({
+  const XList({
     super.key,
     required this.items,
     required this.onChanged,
@@ -35,10 +35,10 @@ class FormList extends StatefulWidget {
   });
 
   @override
-  State<FormList> createState() => _FormListState();
+  State<XList> createState() => _XListState();
 }
 
-class _FormListState extends State<FormList> {
+class _XListState extends State<XList> {
   late List<XFormListItem> _items;
 
   @override
@@ -50,7 +50,7 @@ class _FormListState extends State<FormList> {
   void _addItem() {
     setState(() {
       _items.add(
-        XFormListItem(
+        XFormListItem.XListItem(
           UuidV4().generate(),
           icon: widget.defaultNodeIcon,
           title: widget.defaultNodeName,
@@ -75,7 +75,7 @@ class _FormListState extends State<FormList> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        TextTitle(title: widget.title, fontSize: 14),
+        XTitle(title: widget.title, fontSize: 14),
         Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
@@ -86,7 +86,7 @@ class _FormListState extends State<FormList> {
             children: [
               Expanded(
                 child: _items.isEmpty
-                    ? Empty()
+                    ? XEmpty()
                     : ListView.builder(
                         itemCount: _items.length,
                         itemBuilder: (context, index) {
@@ -121,11 +121,11 @@ class _FormListState extends State<FormList> {
                               // color: Colors.blueGrey,
                               child: Row(
                                 children: [
-                                  ButtonIcon(
+                                  XIconButton(
                                     iconData: HugeIcons.strokeRoundedEdit02,
                                     onPressed: () => _editItem(index),
                                   ),
-                                  ButtonIcon(
+                                  XIconButton(
                                     iconData: HugeIcons.strokeRoundedDelete02,
                                     onPressed: () => _removeItem(index),
                                   ),
@@ -146,7 +146,7 @@ class _FormListState extends State<FormList> {
                     ),
                   ),
                 ),
-                child: ButtonText(
+                child: XTextButton(
                   // 宽度与父组件宽度一致
                   width: double.infinity,
                   onPressed: _addItem, // 增加按钮
@@ -181,7 +181,7 @@ class XFormListItem {
   // 文本、数组、对象体、数字、日期
   final XFormListItemType type;
 
-  XFormListItem(
+  XFormListItem.XListItem(
     this.key, {
     required this.title,
     this.value,

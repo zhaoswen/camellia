@@ -9,8 +9,8 @@ import 'package:hugeicons/hugeicons.dart';
 /// 面包屑组件
 ///
 /// 面包屑组件主要用于展示一系列的路径，比如：首页/应用管理/应用列表
-class Breadcrumb extends StatefulWidget {
-  const Breadcrumb({
+class XBreadcrumb extends StatefulWidget {
+  const XBreadcrumb({
     super.key,
     this.height = 40,
     required this.items,
@@ -27,7 +27,7 @@ class Breadcrumb extends StatefulWidget {
   /// items, all items must be ordered
   ///
   /// 面包列表，也就是所有的路径，注意此部分有顺序要求
-  final List<BreadcrumbItem> items;
+  final List<XBreadcrumbItem> items;
 
   /// middleIcon
   ///
@@ -45,10 +45,10 @@ class Breadcrumb extends StatefulWidget {
   final Widget head;
 
   @override
-  State<Breadcrumb> createState() => _BreadcrumbState();
+  State<XBreadcrumb> createState() => _XBreadcrumbState();
 }
 
-class _BreadcrumbState extends State<Breadcrumb> {
+class _XBreadcrumbState extends State<XBreadcrumb> {
   @override
   Widget build(BuildContext context) {
     // 构建主行组件列表
@@ -77,14 +77,14 @@ class _BreadcrumbState extends State<Breadcrumb> {
   /// buildRow
   ///
   /// 构建面包屑行，包括文本链接和分隔符
-  /// 
+  ///
   /// 此方法会遍历所有面包屑项，为每个项创建TextLink组件，并在项之间添加分隔符图标
   /// 最后一项不会添加分隔符
   List<Widget> buildRow() {
     List<Widget> list = [];
     for (int i = 0; i < widget.items.length; i++) {
       list.add(
-        TextLink(
+        XTextLink(
           onPressed: widget.items[i].onTap,
           height: 20,
           text: widget.items[i].title,
@@ -113,9 +113,9 @@ class _BreadcrumbState extends State<Breadcrumb> {
 /// BreadcrumbItem
 ///
 /// 面包屑子项定义
-/// 
+///
 /// 用于表示面包屑导航中的单个路径项，包含标题、唯一标识符、子项列表和点击回调
-class BreadcrumbItem {
+class XBreadcrumbItem {
   /// Title of the item, required
   ///
   /// 面包屑显示标题，必需属性
@@ -129,7 +129,7 @@ class BreadcrumbItem {
   /// Children of the item, required
   ///
   /// 子级，必需属性
-  final List<BreadcrumbItem> children;
+  final List<XBreadcrumbItem> children;
 
   /// Callback when item is tapped, required
   ///
@@ -143,7 +143,7 @@ class BreadcrumbItem {
   /// [key] 唯一标识符
   /// [children] 子项目列表
   /// [onTap] 点击回调函数
-  BreadcrumbItem({
+  XBreadcrumbItem({
     required this.title,
     required this.key,
     this.children = const [],

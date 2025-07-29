@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Logger extends StatefulWidget {
-  const Logger({super.key});
+class XLogger extends StatefulWidget {
+  const XLogger({super.key});
 
   // 日志内容
 
@@ -28,10 +28,10 @@ class Logger extends StatefulWidget {
   // 提示颜色
 
   @override
-  State<Logger> createState() => _LoggerState();
+  State<XLogger> createState() => _XLoggerState();
 }
 
-class _LoggerState extends State<Logger> {
+class _XLoggerState extends State<XLogger> {
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -2,12 +2,12 @@ import 'package:camellia/widgets/display/empty.dart';
 import 'package:flutter/material.dart';
 
 // 弹出对话框
-void showDialogBasic({
+void showXDialogBasic({
   required BuildContext context,
   required String title,
   double width = 500,
   double height = 500,
-  Widget content = const Empty(),
+  Widget content = const XEmpty(),
   bool showButton = true,
   bool showHeader = true,
   String confirm = "",

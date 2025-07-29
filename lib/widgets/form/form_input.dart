@@ -3,8 +3,8 @@ import 'package:flutter/material.dart' hide Title;
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 
-class FormInput extends StatefulWidget {
-  const FormInput({
+class XInput extends StatefulWidget {
+  const XInput({
     super.key,
     this.title,
     required this.bindKey,
@@ -50,10 +50,10 @@ class FormInput extends StatefulWidget {
   final String initialValue;
 
   @override
-  State<FormInput> createState() => _FormInputState();
+  State<XInput> createState() => _XInputState();
 }
 
-class _FormInputState extends State<FormInput> {
+class _XInputState extends State<XInput> {
   @override
   void initState() {
     super.initState();
@@ -68,7 +68,7 @@ class _FormInputState extends State<FormInput> {
       children: [
         // 配置标题
         if (widget.title != null)
-          TextTitle(
+          XTitle(
             title: widget.title!,
             fontWeight: widget.titleFontWeight,
             fontSize: widget.titleFontSize,

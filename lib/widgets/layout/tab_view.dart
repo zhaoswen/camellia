@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 // 定义标签页数据
-class XTabItem {
+class XTabViewItem {
   final String title;
   final Widget content;
 
-  XTabItem({required this.title, required this.content});
+  XTabViewItem({required this.title, required this.content});
 }
 
 class XTabView extends StatefulWidget {
@@ -19,7 +19,7 @@ class XTabView extends StatefulWidget {
   });
 
   // 标签页数据列表
-  final List<XTabItem> tabs;
+  final List<XTabViewItem> tabs;
 
   // 内容间隔
   final double spacing;

@@ -4,16 +4,16 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 // 文件/目录树组件，用于显示指定目录下的目录结构
-class TreeFile extends StatefulWidget {
+class XFileTree extends StatefulWidget {
   final String rootPath;
 
-  const TreeFile({super.key, required this.rootPath});
+  const XFileTree({super.key, required this.rootPath});
 
   @override
-  TreeFileState createState() => TreeFileState();
+  XFileTreeState createState() => XFileTreeState();
 }
 
-class TreeFileState extends State<TreeFile> {
+class XFileTreeState extends State<XFileTree> {
   final Map<String, bool> _expanded = {};
 
   @override

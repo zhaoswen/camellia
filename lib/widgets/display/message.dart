@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 // Message 更适合桌面端
-class MessageOverlay {
+class XMessageOverlay {
   static final List<OverlayEntry> _entries = [];
 
   static void showMessage(

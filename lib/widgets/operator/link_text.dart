@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TextLink extends StatefulWidget {
-  const TextLink({
+class XTextLink extends StatefulWidget {
+  const XTextLink({
     super.key,
     required this.onPressed,
     required this.text,
@@ -18,10 +18,10 @@ class TextLink extends StatefulWidget {
   final double height;
 
   @override
-  State<TextLink> createState() => _TextLinkState();
+  State<XTextLink> createState() => _XTextLinkState();
 }
 
-class _TextLinkState extends State<TextLink> {
+class _XTextLinkState extends State<XTextLink> {
   bool _isHovered = false;
 
   @override

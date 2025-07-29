@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TextTitle extends StatelessWidget {
-  const TextTitle({
+class XTitle extends StatelessWidget {
+  const XTitle({
     super.key,
     required this.title,
     this.fontSize = 14,

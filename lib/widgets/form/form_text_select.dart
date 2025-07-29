@@ -8,8 +8,8 @@ import 'package:form_builder_validators/form_builder_validators.dart';
 
 import '../layout/dialog_basic.dart';
 
-class FormTextSelect extends StatefulWidget {
-  const FormTextSelect({
+class XTextSelect extends StatefulWidget {
+  const XTextSelect({
     super.key,
     required this.title,
     required this.bindKey,
@@ -38,10 +38,10 @@ class FormTextSelect extends StatefulWidget {
   final String initialValue;
 
   @override
-  State<FormTextSelect> createState() => _FormTextSelectState();
+  State<XTextSelect> createState() => _XTextSelectState();
 }
 
-class _FormTextSelectState extends State<FormTextSelect> {
+class _XTextSelectState extends State<XTextSelect> {
   var currentSelect = "";
 
   @override
@@ -52,7 +52,7 @@ class _FormTextSelectState extends State<FormTextSelect> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // 配置标题
-        TextTitle(title: widget.title, fontSize: 14),
+        XTitle(title: widget.title, fontSize: 14),
         // 配置内容
         Container(
           margin: EdgeInsets.only(bottom: 20),
@@ -128,12 +128,12 @@ class _FormTextSelectState extends State<FormTextSelect> {
               SizedBox(width: 5),
               SizedBox(
                 height: 27,
-                child: ButtonText(
+                child: XTextButton(
                   width: 55,
                   onPressed: () async => {
-                    showDialogBasic(
+                    showXDialogBasic(
                       context: context,
-                      header: Search(hintText: '输入关键字'),
+                      header: XSearch(hintText: '输入关键字'),
                       title: '选择处理器',
                       width: 800,
                       onConfirm: () {
@@ -168,11 +168,11 @@ class _FormTextSelectState extends State<FormTextSelect> {
     );
   }
 
-  List<XTabItem> makeTab(List<XFormTextSelectClass> options) {
-    List<XTabItem> tabs = [];
+  List<XTabViewItem> makeTab(List<XFormTextSelectClass> options) {
+    List<XTabViewItem> tabs = [];
     for (XFormTextSelectClass option in options) {
       tabs.add(
-        XTabItem(
+        XTabViewItem(
           title: option.label,
           content: ListView.builder(
             itemCount: option.items.length,

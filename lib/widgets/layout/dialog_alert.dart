@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // 弹出对话框
-void showDialogAlert({
+void showXDialogAlert({
   required BuildContext context,
   required String title,
   double width = 500,

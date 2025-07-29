@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
-/// Simple Theme for dark
+/// simple Theme for light
+///
+// TODO:目前此主题并不完善
 final ThemeData simpleThemeDark = ThemeData(
-  brightness: Brightness.dark,
-  scaffoldBackgroundColor: Colors.black,
+  brightness: Brightness.light,
+  scaffoldBackgroundColor: Colors.white,
   primaryColor: const Color.fromARGB(255, 18, 115, 250),
   colorScheme:
       ColorScheme.fromSeed(
@@ -18,11 +20,11 @@ final ThemeData simpleThemeDark = ThemeData(
         // 禁用
         tertiary: Colors.grey,
       ),
-  cardTheme: CardThemeData(color: Colors.black54),
+  cardTheme: CardThemeData(color: Colors.black12),
   textTheme: const TextTheme(
     bodyLarge: TextStyle(fontSize: 13),
     // 默认字体
-    bodyMedium: TextStyle(fontSize: 12, color: Colors.white70),
+    bodyMedium: TextStyle(fontSize: 12, color: Colors.black87),
     bodySmall: TextStyle(fontSize: 11),
     titleLarge: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
     // title
@@ -89,6 +91,7 @@ final ThemeData simpleThemeDark = ThemeData(
   iconTheme: const IconThemeData(color: Color(0xff333333)),
   // 提示框默认样式
   useSystemColors: true,
+  dividerColor: Colors.black12,
   dividerTheme: const DividerThemeData(
     color: Colors.black12,
     thickness: 1,

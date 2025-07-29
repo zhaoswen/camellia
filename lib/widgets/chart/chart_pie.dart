@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 /// Pie Chart Widget, unactive now
-class ChartPie extends StatefulWidget {
+class XPieChart extends StatefulWidget {
   /// pie chart
-  const ChartPie({super.key});
+  const XPieChart({super.key});
 
   @override
-  State<ChartPie> createState() => _ChartPieState();
+  State<XPieChart> createState() => _XPieChartState();
 }
 
-class _ChartPieState extends State<ChartPie> {
+class _XPieChartState extends State<XPieChart> {
   @override
   Widget build(BuildContext context) {
     return const Placeholder();

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Panel extends StatefulWidget {
+class XPanel extends StatefulWidget {
   final String name;
 
   // 边框方向
@@ -15,7 +15,7 @@ class Panel extends StatefulWidget {
   // 内容内边距
   final EdgeInsetsGeometry padding;
 
-  const Panel({
+  const XPanel({
     super.key,
     required this.name,
     this.content = const Text(""),
@@ -30,10 +30,10 @@ class Panel extends StatefulWidget {
   });
 
   @override
-  State<Panel> createState() => _PanelState();
+  State<XPanel> createState() => _XPanelState();
 }
 
-class _PanelState extends State<Panel> {
+class _XPanelState extends State<XPanel> {
   @override
   Widget build(BuildContext context) {
     return Container(

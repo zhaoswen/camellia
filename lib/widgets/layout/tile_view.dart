@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ViewTile extends StatefulWidget {
-  const ViewTile({super.key, required this.items, this.spacing = 10});
+class XTileView extends StatefulWidget {
+  const XTileView({super.key, required this.items, this.spacing = 10});
 
   // 列表
   final List<XTileViewItem> items;
@@ -10,10 +10,10 @@ class ViewTile extends StatefulWidget {
   final double spacing;
 
   @override
-  State<ViewTile> createState() => _ViewTileState();
+  State<XTileView> createState() => _XTileViewState();
 }
 
-class _ViewTileState extends State<ViewTile> {
+class _XTileViewState extends State<XTileView> {
   @override
   Widget build(BuildContext context) {
     return GridView(

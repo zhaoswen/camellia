@@ -4,14 +4,14 @@ import 'package:flutter_advanced_switch/flutter_advanced_switch.dart';
 import '../display/text_title.dart';
 
 // 开关组件
-class FormSwitch extends StatefulWidget {
+class XSwitch extends StatefulWidget {
   final bool value;
   final String title;
   final double titleFontSize;
   final FontWeight titleFontWeight;
   final ValueChanged<dynamic> onChanged;
 
-  const FormSwitch({
+  const XSwitch({
     super.key,
     required this.value,
     required this.onChanged,
@@ -21,10 +21,10 @@ class FormSwitch extends StatefulWidget {
   });
 
   @override
-  FormSwitchState createState() => FormSwitchState();
+  XSwitchState createState() => XSwitchState();
 }
 
-class FormSwitchState extends State<FormSwitch> {
+class XSwitchState extends State<XSwitch> {
   final _controller00 = ValueNotifier<bool>(false);
 
   @override
@@ -39,7 +39,7 @@ class FormSwitchState extends State<FormSwitch> {
       crossAxisAlignment: CrossAxisAlignment.start,
       spacing: 5,
       children: [
-        TextTitle(
+        XTitle(
           title: widget.title,
           fontWeight: widget.titleFontWeight,
           fontSize: widget.titleFontSize,

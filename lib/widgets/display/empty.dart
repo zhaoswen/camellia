@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 // 空状态组件
-class Empty extends StatelessWidget {
-  const Empty({
+class XEmpty extends StatelessWidget {
+  const XEmpty({
     super.key,
     this.text = "暂无数据",
     this.showIcon = false,

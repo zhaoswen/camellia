@@ -3,8 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 
-class FormBody extends StatefulWidget {
-  const FormBody({
+class XFormBody extends StatefulWidget {
+  const XFormBody({
     super.key,
     required this.formKey,
     required this.onChange,
@@ -24,14 +24,14 @@ class FormBody extends StatefulWidget {
   final List<Widget> children;
 
   @override
-  State<FormBody> createState() => _FormBodyState();
+  State<XFormBody> createState() => _XFormBodyState();
 }
 
-class _FormBodyState extends State<FormBody> {
+class _XFormBodyState extends State<XFormBody> {
   @override
   Widget build(BuildContext context) {
     return widget.children.isEmpty
-        ? Empty(text: widget.emptyText)
+        ? XEmpty(text: widget.emptyText)
         : FormBuilder(
             onChanged: widget.onChange,
             key: widget.formKey,

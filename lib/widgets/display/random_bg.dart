@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 
 // 随机渐变化背景
 // 这玩意可能有点消耗性能，已知改变窗口大小会导致频闪
-class RandomBackground extends StatefulWidget {
-  const RandomBackground({
+class XRandomBackground extends StatefulWidget {
+  const XRandomBackground({
     super.key,
     required this.child,
     this.blur = 100,
@@ -30,10 +30,10 @@ class RandomBackground extends StatefulWidget {
   //
 
   @override
-  State<RandomBackground> createState() => _RandomBackgroundState();
+  State<XRandomBackground> createState() => _XRandomBackgroundState();
 }
 
-class _RandomBackgroundState extends State<RandomBackground> {
+class _XRandomBackgroundState extends State<XRandomBackground> {
   final Random _random = Random();
 
   @override

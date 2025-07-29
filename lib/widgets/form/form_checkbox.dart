@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 
 // 多选框
-class FormCheckbox extends StatefulWidget {
-  const FormCheckbox({super.key});
+class XCheckbox extends StatefulWidget {
+  const XCheckbox({super.key});
 
   @override
-  State<FormCheckbox> createState() => _FormCheckboxState();
+  State<XCheckbox> createState() => _XCheckboxState();
 }
 
-class _FormCheckboxState extends State<FormCheckbox> {
+class _XCheckboxState extends State<XCheckbox> {
   @override
   Widget build(BuildContext context) {
     return const Placeholder();

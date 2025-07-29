@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-class ButtonMenu extends StatefulWidget {
-  const ButtonMenu({
+class XMenuButton extends StatefulWidget {
+  const XMenuButton.XMenuButton({
     super.key,
     this.title = "",
     this.menuItems = const [],
@@ -36,10 +36,10 @@ class ButtonMenu extends StatefulWidget {
 
   @override
   // ignore: library_private_types_in_public_api
-  _ButtonMenuState createState() => _ButtonMenuState();
+  _XMenuButtonState createState() => _XMenuButtonState();
 }
 
-class _ButtonMenuState extends State<ButtonMenu> {
+class _XMenuButtonState extends State<XMenuButton> {
   OverlayEntry? _overlayEntry;
   bool _isMenuOpen = false;
 

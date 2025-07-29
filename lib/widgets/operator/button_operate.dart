@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 import '../display/message.dart';
 
-class ButtonOperate extends StatefulWidget {
+class XOperateButton extends StatefulWidget {
   final IconData iconData;
   final VoidCallback? onPressed;
   final String? tooltip;
@@ -18,7 +18,7 @@ class ButtonOperate extends StatefulWidget {
   // 如果为true，第一次点击不会执行操作，第二次点击才会触发
   final bool isDanger;
 
-  const ButtonOperate({
+  const XOperateButton({
     super.key,
     required this.iconData,
     this.onPressed,
@@ -35,10 +35,10 @@ class ButtonOperate extends StatefulWidget {
   });
 
   @override
-  State<ButtonOperate> createState() => _ButtonOperateState();
+  State<XOperateButton> createState() => _XOperateButtonState();
 }
 
-class _ButtonOperateState extends State<ButtonOperate> {
+class _XOperateButtonState extends State<XOperateButton> {
   bool isDangerState = false;
 
   @override
@@ -63,7 +63,7 @@ class _ButtonOperateState extends State<ButtonOperate> {
                         // showSnackbar(
                         //     S.current.warn, S.current.hint_danger_operator_warn,
                         //     type: XSnackbarType.warning, duration: 2);
-                        MessageOverlay.showMessage(
+                        XMessageOverlay.showMessage(
                           "危险操作",
                           title: "警告",
                           type: MessageType.warning,

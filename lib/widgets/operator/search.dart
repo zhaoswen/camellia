@@ -2,17 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-class Search extends StatefulWidget {
+class XSearch extends StatefulWidget {
   final String hintText;
   final ValueChanged<String>? onSubmitted;
 
-  const Search({super.key, required this.hintText, this.onSubmitted});
+  const XSearch({super.key, required this.hintText, this.onSubmitted});
 
   @override
-  State<Search> createState() => _SearchState();
+  State<XSearch> createState() => _XSearchState();
 }
 
-class _SearchState extends State<Search> {
+class _XSearchState extends State<XSearch> {
   final TextEditingController _controller = TextEditingController();
 
   @override

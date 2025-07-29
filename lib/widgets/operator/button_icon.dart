@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-class ButtonIcon extends StatefulWidget {
+class XIconButton extends StatefulWidget {
   final IconData iconData;
   final VoidCallback? onPressed;
   final String? tooltip;
@@ -17,7 +17,7 @@ class ButtonIcon extends StatefulWidget {
   final double height;
   final double iconSize;
 
-  const ButtonIcon({
+  const XIconButton({
     super.key,
     required this.iconData,
     this.onPressed,
@@ -36,10 +36,10 @@ class ButtonIcon extends StatefulWidget {
   });
 
   @override
-  State<ButtonIcon> createState() => _ButtonIconState();
+  State<XIconButton> createState() => _XIconButtonState();
 }
 
-class _ButtonIconState extends State<ButtonIcon> {
+class _XIconButtonState extends State<XIconButton> {
   @override
   Widget build(BuildContext context) {
     return widget.isDisplayed
